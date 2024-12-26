@@ -9,12 +9,17 @@
 
 	echo "<pre>";
 
+	echo "<table>";
 	foreach ($grid as $row) {
+		echo "<tr>";
 		foreach ($row as $column) {
-			echo $column . " ";
+			echo "<td>";
+			echo $column;
+			echo "</td>";
 		}
-		echo "<br>";
+		echo "</tr>";
 	}
+	echo "</table>";
 
 	echo "</pre>";
 ?>

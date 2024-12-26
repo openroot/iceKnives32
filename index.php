@@ -26,7 +26,9 @@
 		$characters = str_split($key);
 		$noncharacterCount = 0;
 		foreach ($characters as $character) {
-			//echo $character . ";";
+			if (!array_key_exists($character, $letterCodes)) {
+				$noncharacterCount++;
+			}
 		}
 		$data[$key] = [
 			"position_numeric" => $position++,

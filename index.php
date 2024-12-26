@@ -25,15 +25,20 @@
 	foreach ($filter as $key) {
 		$characters = str_split($key);
 		$noncharacterCount = 0;
+		$checkKey = 0;
 		foreach ($characters as $character) {
 			if (!array_key_exists($character, $letterCodes)) {
 				$noncharacterCount++;
+			}
+			else {
+				$checkKey += $letterCodes[$character];
 			}
 		}
 		$data[$key] = [
 			"position_numeric" => $position++,
 			"character_length" => strlen($key),
-			"noncharacter_count" => $noncharacterCount
+			"noncharacter_count" => $noncharacterCount,
+			"check_key" => $checkKey
 		];
 	}
 
@@ -71,6 +76,11 @@
 
 	//
 	print_r($data);
+	$checkTotal = 0;
+	foreach ($data as $key => $information) {
+		$checkTotal += $information["check_key"];
+	}
+	echo "Check total: " . $checkTotal;
 
 	echo "</pre>";
 ?>

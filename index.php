@@ -1,16 +1,16 @@
 <?php
 	$raw = file("32.txt");
 
-	$data = [];
+	$filter = [];
 	$i = 0;
 	foreach ($raw as $key) {
-		$data[$i++] = trim($key);
+		$filter[$i++] = trim($key);
 	}
 
 	$grid = [];
 	for ($i = 0; $i <= 25; $i++) {
 		for ($j = 0; $j <= 25; $j++) {
-			$grid[$i][$j] = $data[($j * 26) + $i];
+			$grid[$i][$j] = $filter[($j * 26) + $i];
 		}
 	}
 

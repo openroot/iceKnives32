@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>iceKnives32</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="interNet29/plugIn128/n.umber/style.css">
+		<script src=""></script>
+	</head>
+	<body>
+
 <?php
 	/*
 	*/
@@ -50,7 +61,9 @@
 			$grid[$i][$j] = $filter[($j * 26) + $i];
 		}
 	}
+?>
 
+<?php
 	/*
 	*/
 	echo "<pre>";
@@ -67,7 +80,9 @@
 		echo "<td>" . $i++ . "</td>";
 		foreach ($row as $column) {
 			echo "<td>";
-			echo "(" . $data[$column]["position_numeric"] . ") " . $column;
+			echo $column;
+			echo "<br>";
+			echo "(" . $data[$column]["position_numeric"] . ") " . "[" . $data[$column]["character_length"] . "] " . "<" . $data[$column]["check_key"] . ">";
 			echo "</td>";
 		}
 		echo "</tr>";
@@ -83,3 +98,6 @@
 
 	echo "</pre>";
 ?>
+
+	</body>
+</html>

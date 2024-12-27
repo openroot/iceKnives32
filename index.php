@@ -31,12 +31,12 @@
 
 	/*
 	*/
-	$data = [];
 	$position = 1;
+	$data = [];
 	foreach ($filter as $key) {
-		$characters = str_split($key);
 		$noncharacterCount = 0;
 		$checkKey = 0;
+		$characters = str_split($key);
 		foreach ($characters as $character) {
 			if (!array_key_exists($character, $letterCodes)) {
 				$noncharacterCount++;
@@ -67,22 +67,24 @@
 	/*
 	*/
 	echo "<table>";
-	echo "<tr>";
-	for ($k = 0; $k <= 26; $k++) {
+	echo "<tr><td>x</td>";
+	for ($k = 1; $k <= 26; $k++) {
 		echo "<td>" . $k . "</td>";
 	}
-	echo "</tr>";
+	echo "<td>sum</td></tr>";
 	$i = 1;
 	foreach ($grid as $row) {
+		$sum = 0;
 		echo "<tr>";
 		echo "<td>" . $i++ . "</td>";
 		foreach ($row as $column) {
 			echo "<td>";
-			echo '<span class="key">' . $column . '</span>';
-			echo "<br>";
+			echo '<span class="key">' . $column . '</span><br>';
 			echo '<span class="positionNumeric">' . $data[$column]["position_numeric"] . "</span>" . '<span class="characterLength">' . $data[$column]["character_length"] . "</span>" . '<span class="checkKey">' . $data[$column]["check_key"] . "</span>";
 			echo "</td>";
+			$sum += $data[$column]["check_key"];
 		}
+		echo "<td>" . $sum . "</td>";
 		echo "</tr>";
 	}
 	echo "</table>";

@@ -72,7 +72,6 @@
 				}
 			}
 			if (strlen($result) > 0) {
-				//$result = result.Substring(0, result.Length - 2);
 				$result = substr($result, 0, -2);
 			}
 		}

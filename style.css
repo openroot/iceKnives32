@@ -21,6 +21,7 @@
 	--greyDeep: #0E1119;
 	--white: #FFFFFF;
 	--black: #000000;
+	--transparent: transparent;
 }
 
 
@@ -85,34 +86,36 @@ tr:hover {
 	background-color: var(--yellowDay);
 	color: var(--pink);
 }
-.tooltip-top {
+.tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	border-style: solid;
+	border-color: var(--yellowDay) var(--transparent) var(--transparent) var(--transparent);
+}
+.tooltip .tooltip-top {
 	bottom: 125%;
 	left: 50%;
 	margin-left: -60px;
 }
-.tooltip-bottom {
-	top: 135%;
-	left: 50%;
-	margin-left: -60px;
-}
-.tooltip-right {
-	top: -5px;
-	left: 125%;
-}
-.tooltip-left {
-	top: -5px;
-	bottom: auto;
-	right: 128%;
-}
 .tooltip .tooltip-top::after {
-	content: "";
-	position: absolute;
 	top: 100%;
 	left: 50%;
 	margin-left: -5px;
 	border-width: 5px;
-	border-style: solid;
-	border-color: var(--yellowDay) transparent transparent transparent;
+}
+.tooltip .tooltip-bottom {
+	top: 135%;
+	left: 50%;
+	margin-left: -60px;
+}
+.tooltip .tooltip-left {
+	top: -5px;
+	bottom: auto;
+	right: 128%;
+}
+.tooltip .tooltip-right {
+	top: -5px;
+	left: 125%;
 }
 .tooltip:hover .tooltiptext {
 	visibility: visible;

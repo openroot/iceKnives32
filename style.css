@@ -1,3 +1,67 @@
+@font-face {
+	font-family: robotoMono;
+	src: url("fonts/RobotoMono/static/RobotoMono-Regular.ttf");
+}
+
+:root {
+	--blue: #00B9FB;
+	--green: #00FF7F;
+	--red: #FB667A;
+	--orange: #FF9966;
+	--pink: #E4007C;
+	--yellowDay: #FFF842;
+	--yellowDark: #7F7C21;
+	--yellowDeep: #403E10;
+	--slateDay: #464A52;
+	--slateDawn: #323C50;
+	--slateDusk: #2C3446;
+	--slateDark: #1F2739;
+	--slateDeep: #181828;
+	--greyDawn: #5F727F;
+	--greyDeep: #0E1119;
+	--white: #FFFFFF;
+}
+
+
 body {
-	background-color: white;
+	font-family: robotoMono, "Courier New";
+	font-size: 0.7em;
+	margin: 26px;
+	-webkit-box-shadow: inset 0 2px 1.5px 0 var(--yellowDay);
+	-moz-box-shadow: inset 0 2px 1.5px 0 var(--yellowDay);
+	box-shadow: inset 0 2px 1.5px 0 var(--yellowDay);
+	border-bottom: 1px dotted var(--yellowDay);
+	background-color: var(--slateDeep);
+	color: var(--red);
+}
+
+table {
+	width: 100%;
+	height: 100%;
+	border-style: none;
+	line-height: 1.26em;
+}
+table td {
+	border-bottom: 1px dotted var(--white);
+}
+table span.positionNumeric {
+	padding: 0 3px;
+	background-color: var(--green);
+	color: var(--greyDeep);
+}
+table span.characterLength {
+	padding: 0 3px;
+	background-color: var(--red);
+	color: var(--greyDeep);
+}
+table span.checkKey {
+	padding: 0 3px;
+	background-color: var(--pink);
+	color: var(--white);
+}
+tr:hover {
+	-webkit-box-shadow: 0 6px 6px -6px var(--greyDeep);
+	-moz-box-shadow: 0 6px 6px -6px var(--greyDeep);
+	box-shadow: 0 6px 6px -6px var(--greyDeep);
+	background-color: var(--slateDay);
 }

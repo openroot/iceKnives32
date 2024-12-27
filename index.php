@@ -66,8 +66,6 @@
 <?php
 	/*
 	*/
-	echo "<pre>";
-
 	echo "<table>";
 	echo "<tr>";
 	for ($k = 0; $k <= 26; $k++) {
@@ -80,23 +78,14 @@
 		echo "<td>" . $i++ . "</td>";
 		foreach ($row as $column) {
 			echo "<td>";
-			echo $column;
+			echo '<span class="key">' . $column . '</span>';
 			echo "<br>";
-			echo "(" . $data[$column]["position_numeric"] . ") " . "[" . $data[$column]["character_length"] . "] " . "<" . $data[$column]["check_key"] . ">";
+			echo '<span class="positionNumeric">' . $data[$column]["position_numeric"] . "</span>" . '<span class="characterLength">' . $data[$column]["character_length"] . "</span>" . '<span class="checkKey">' . $data[$column]["check_key"] . "</span>";
 			echo "</td>";
 		}
 		echo "</tr>";
 	}
 	echo "</table>";
-
-	/*print_r($data);
-	$checkTotal = 0;
-	foreach ($data as $key => $information) {
-		$checkTotal += $information["check_key"];
-	}
-	echo "Check total: " . $checkTotal;*/
-
-	echo "</pre>";
 ?>
 
 	</body>

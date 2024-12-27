@@ -4,7 +4,7 @@
 		<title>iceKnives32</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="interNet29/plugIn128/n.umber/style.css">
+		<link rel="stylesheet" href="style.css">
 		<script src=""></script>
 	</head>
 	<body>

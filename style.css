@@ -31,7 +31,7 @@ body {
 	-moz-box-shadow: inset 0 2px 1.5px 0 var(--yellowDay);
 	box-shadow: inset 0 2px 1.5px 0 var(--yellowDay);
 	border-bottom: 1px dotted var(--yellowDay);
-	background-color: var(--slateDeep);
+	background-color: var(--greyDeep);
 	color: var(--red);
 }
 

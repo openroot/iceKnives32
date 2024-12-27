@@ -21,8 +21,6 @@
 	*/
 	$raw = file("32.txt");
 
-	echo getFactorsOfNumber(536);
-
 	/*
 	*/
 	$filter = [];
@@ -82,19 +80,6 @@
 	}
 ?>
 
-	<br><br>
-	<span class="tooltip">Top
-		<span class="tooltipText tooltipTop">Tooltip text top.</span>
-	</span>
-	<span class="tooltip">Bottom
-		<span class="tooltipText tooltipBottom">Tooltip text bottom.</span>
-	</span>
-	<span class="tooltip">Left
-		<span class="tooltipText tooltipLeft">Tooltip text left.</span>
-	</span>
-	<span class="tooltip">Right
-		<span class="tooltipText tooltipRight">Tooltip text right.</span>
-	</span>
 <?php
 	/*
 	*/
@@ -112,14 +97,12 @@
 		foreach ($row as $column) {
 			echo "<td>";
 			echo '<span class="key">' . $column . '</span><br>';
-			echo '<span class="positionNumeric">' . $data[$column]["position_numeric"] . "</span>" . '<span class="characterLength">' . $data[$column]["character_length"] . "</span>";
-			echo '<span class="tooltip">';
-			echo '<span class="checkKey">' . $data[$column]["check_key"] . "</span>";
-			echo '<span class="tooltipText tooltipRight">' . getFactorsOfNumber($data[$column]["check_key"]) . '</span></span>';
+			echo '<span class="positionNumeric">' . $data[$column]["position_numeric"] . "</span>" . '<span class="characterLength">' . $data[$column]["character_length"] . '</span>';
+			echo '<span tooltip="' . getFactorsOfNumber($data[$column]["check_key"]) . '"><span class="checkKey">' . $data[$column]["check_key"] . '</span></span>';
 			echo "</td>";
 			$sum += $data[$column]["check_key"];
 		}
-		echo "<td>" . $sum . "</td>";
+		echo '<td><span tooltip="' . getFactorsOfNumber($sum) . '" flow="left">' . $sum . '</td>';
 		echo "</tr>";
 	}
 	echo "</table>";

@@ -112,7 +112,10 @@
 		foreach ($row as $column) {
 			echo "<td>";
 			echo '<span class="key">' . $column . '</span><br>';
-			echo '<span class="positionNumeric">' . $data[$column]["position_numeric"] . "</span>" . '<span class="characterLength">' . $data[$column]["character_length"] . "</span>" . '<span class="checkKey">' . $data[$column]["check_key"] . "</span>";
+			echo '<span class="positionNumeric">' . $data[$column]["position_numeric"] . "</span>" . '<span class="characterLength">' . $data[$column]["character_length"] . "</span>";
+			echo '<span class="tooltip">';
+			echo '<span class="checkKey">' . $data[$column]["check_key"] . "</span>";
+			echo '<span class="tooltipText tooltipRight">' . getFactorsOfNumber($data[$column]["check_key"]) . '</span></span>';
 			echo "</td>";
 			$sum += $data[$column]["check_key"];
 		}

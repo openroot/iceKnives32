@@ -76,16 +76,18 @@ tr:hover {
 .tooltip .tooltipText {
 	visibility: hidden;
 	position: absolute;
-	display: block;
-	width: 100%;
-	padding: 5px 0;
+	display: inline-block;
+	min-width: 100%;
+	min-height: 100%;
+	padding: 5px;
 	border-radius: 6px;
 	text-align: center;
+	white-space: nowrap;
 	opacity: 0;
 	z-index: 1;
 	background-color: var(--yellowDay);
 	color: var(--pink);
-	transition: opacity 0.3s;
+	transition: opacity 0.1s;
 }
 .tooltip:hover .tooltipText {
 	visibility: visible;
@@ -95,11 +97,11 @@ tr:hover {
 	content: "";
 	position: absolute;
 	border-style: solid;
-	border-color: var(--yellowDay) var(--transparent) var(--transparent) var(--transparent);
 }
 .tooltip .tooltipTop {
 	bottom: 125%;
-	left: 50%;
+	left: -50%;
+	position: absolute;
 }
 .tooltip .tooltipTop::after {
 	top: 100%;
@@ -108,16 +110,35 @@ tr:hover {
 	border-width: 5px;
 }
 .tooltip .tooltipBottom {
-	top: 135%;
+	top: 125%;
+	left: -75%;
+}
+.tooltip .tooltipBottom::after {
+	top: 100%;
 	left: 50%;
-	margin-left: -60px;
+	margin-left: -5px;
+	border-width: 5px;
+	border-color: var(--yellowDay) var(--transparent) var(--transparent) var(--transparent);
 }
 .tooltip .tooltipLeft {
-	top: -5px;
-	bottom: auto;
-	right: 128%;
+	top: -25%;
+	right: 125%;
+}
+.tooltip .tooltipLeft::after {
+	top: 50%;
+	left: 100%;
+	margin-top: -5px;
+	border-width: 5px;
+	border-color: var(--transparent) var(--transparent) var(--transparent) var(--yellowDay);
 }
 .tooltip .tooltipRight {
-	top: -5px;
+	top: -25%;
 	left: 125%;
+}
+.tooltip .tooltipRight::after {
+	top: 50%;
+	right: 100%;
+	margin-top: -5px;
+	border-width: 5px;
+	border-color: var(--transparent) var(--yellowDay) var(--transparent) var(--transparent);
 }

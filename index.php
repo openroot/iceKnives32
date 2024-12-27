@@ -67,20 +67,19 @@
 		echo "<td>" . $i++ . "</td>";
 		foreach ($row as $column) {
 			echo "<td>";
-			echo $column;
+			echo "(" . $data[$column]["position_numeric"] . ") " . $column;
 			echo "</td>";
 		}
 		echo "</tr>";
 	}
 	echo "</table>";
 
-	//
-	print_r($data);
+	/*print_r($data);
 	$checkTotal = 0;
 	foreach ($data as $key => $information) {
 		$checkTotal += $information["check_key"];
 	}
-	echo "Check total: " . $checkTotal;
+	echo "Check total: " . $checkTotal;*/
 
 	echo "</pre>";
 ?>

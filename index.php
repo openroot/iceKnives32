@@ -75,11 +75,11 @@
 
 	/* 5. Information */
 	$information = [];
+
+	/**/
 ?>
 
 <?php
-	/*
-	*/
 	echo "<table>";
 	echo "<tr><td>x</td>";
 	for ($k = 1; $k <= 26; $k++) {

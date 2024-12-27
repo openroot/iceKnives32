@@ -21,6 +21,8 @@
 	*/
 	$raw = file("32.txt");
 
+	echo getFactorsOfNumber(536);
+
 	/*
 	*/
 	$filter = [];
@@ -61,8 +63,37 @@
 			$grid[$i][$j] = $filter[($j * 26) + $i];
 		}
 	}
+
+	function getFactorsOfNumber(int $number) {
+		$result = "";
+		if ($number > 0) {
+			$factor;
+			for ($factor = 2; $factor < $number; $factor++) {
+				if ($number % $factor == 0) {
+					$result .= $factor . ", ";
+				}
+			}
+			if (strlen($result) > 0) {
+				//$result = result.Substring(0, result.Length - 2);
+				$result = substr($result, 0, -2);
+			}
+		}
+		return $result;
+	}
 ?>
 
+	<div class="tooltip">Hover over me
+		<span class="tooltiptext tooltip-top">Tooltip text top</span>
+	</div>
+	<div class="tooltip">Hover over me
+		<span class="tooltiptext tooltip-bottom">Tooltip text bottom</span>
+	</div>
+	<div class="tooltip">Hover over me
+		<span class="tooltiptext tooltip-left">Tooltip text left</span>
+	</div>
+	<div class="tooltip">Hover over me
+		<span class="tooltiptext tooltip-right">Tooltip text right</span>
+	</div>
 <?php
 	/*
 	*/

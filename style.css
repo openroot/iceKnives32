@@ -73,51 +73,51 @@ tr:hover {
 	display: inline-block;
 	border-bottom: 1px dotted var(--black);
 }
-.tooltip .tooltiptext {
+.tooltip .tooltipText {
 	visibility: hidden;
 	position: absolute;
-	width: 120px;
-	text-align: center;
+	display: block;
+	width: 100%;
 	padding: 5px 0;
 	border-radius: 6px;
-	z-index: 1;
+	text-align: center;
 	opacity: 0;
-	transition: opacity 0.3s;
+	z-index: 1;
 	background-color: var(--yellowDay);
 	color: var(--pink);
+	transition: opacity 0.3s;
 }
-.tooltip .tooltiptext::after {
+.tooltip:hover .tooltipText {
+	visibility: visible;
+	opacity: 1;
+}
+.tooltip .tooltipText::after {
 	content: "";
 	position: absolute;
 	border-style: solid;
 	border-color: var(--yellowDay) var(--transparent) var(--transparent) var(--transparent);
 }
-.tooltip .tooltip-top {
+.tooltip .tooltipTop {
 	bottom: 125%;
 	left: 50%;
-	margin-left: -60px;
 }
-.tooltip .tooltip-top::after {
+.tooltip .tooltipTop::after {
 	top: 100%;
 	left: 50%;
 	margin-left: -5px;
 	border-width: 5px;
 }
-.tooltip .tooltip-bottom {
+.tooltip .tooltipBottom {
 	top: 135%;
 	left: 50%;
 	margin-left: -60px;
 }
-.tooltip .tooltip-left {
+.tooltip .tooltipLeft {
 	top: -5px;
 	bottom: auto;
 	right: 128%;
 }
-.tooltip .tooltip-right {
+.tooltip .tooltipRight {
 	top: -5px;
 	left: 125%;
-}
-.tooltip:hover .tooltiptext {
-	visibility: visible;
-	opacity: 1;
 }

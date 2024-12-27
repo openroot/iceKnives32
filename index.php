@@ -82,18 +82,19 @@
 	}
 ?>
 
-	<div class="tooltip">Hover over me
-		<span class="tooltiptext tooltip-top">Tooltip text top</span>
-	</div>
-	<div class="tooltip">Hover over me
-		<span class="tooltiptext tooltip-bottom">Tooltip text bottom</span>
-	</div>
-	<div class="tooltip">Hover over me
-		<span class="tooltiptext tooltip-left">Tooltip text left</span>
-	</div>
-	<div class="tooltip">Hover over me
-		<span class="tooltiptext tooltip-right">Tooltip text right</span>
-	</div>
+	<br><br>
+	<span class="tooltip">Top
+		<span class="tooltipText tooltipTop">Tooltip text top.</span>
+	</span>
+	<span class="tooltip">Bottom
+		<span class="tooltipText tooltipBottom">Tooltip text bottom.</span>
+	</span>
+	<span class="tooltip">Left
+		<span class="tooltipText tooltipLeft">Tooltip text left.</span>
+	</span>
+	<span class="tooltip">Right
+		<span class="tooltipText tooltipRight">Tooltip text right.</span>
+	</span>
 <?php
 	/*
 	*/

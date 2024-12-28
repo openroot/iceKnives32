@@ -57,22 +57,6 @@
 		}
 	}
 
-	function getFactorsOfNumber(int $number) {
-		$result = "";
-		if ($number > 0) {
-			$factor;
-			for ($factor = 2; $factor < $number; $factor++) {
-				if ($number % $factor == 0) {
-					$result .= $factor . ", ";
-				}
-			}
-			if (strlen($result) > 0) {
-				$result = substr($result, 0, -2);
-			}
-		}
-		return $result;
-	}
-
 	/* 5. Information */
 	$information = [];
 
@@ -91,7 +75,27 @@
 	/* 10. Standard */
 	$standard = [];
 
+	/* 11. Diary */
+	$diary = [];
+
 	/**/
+
+	/**/
+	function getFactorsOfNumber(int $number) {
+		$result = "";
+		if ($number > 0) {
+			$factor;
+			for ($factor = 2; $factor < $number; $factor++) {
+				if ($number % $factor == 0) {
+					$result .= $factor . ", ";
+				}
+			}
+			if (strlen($result) > 0) {
+				$result = substr($result, 0, -2);
+			}
+		}
+		return $result;
+	}
 ?>
 
 <?php

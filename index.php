@@ -76,6 +76,21 @@
 	/* 5. Information */
 	$information = [];
 
+	/* 6. Paragraph */
+	$paragraph = [];
+
+	/* 7. Socket */
+	$socket = [];
+
+	/* 8. Tape */
+	$tape = [];
+
+	/* 9. Channel */
+	$channel = [];
+
+	/* 10. Standard */
+	$standard = [];
+
 	/**/
 ?>
 

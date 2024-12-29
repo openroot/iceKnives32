@@ -78,7 +78,26 @@
 	/* 11. Diary */
 	$diary = [];
 
+	/* 12. Code */
+	$code = [];
+
+	/* 13. Message */
+	$message = [];
+
+	/* 14. Property */
+	$property = [];
+
+	/* 15. Card */
+	$card = [];
+
+	/* 16. Frame */
+	$frame =[];
+
+	/* 17. Hash */
+	$hash = [];
+
 	/**/
+
 
 	/**/
 	function getFactorsOfNumber(int $number) {

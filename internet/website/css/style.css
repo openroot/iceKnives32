@@ -1,7 +1,7 @@
 /* Start: Variable */
 @font-face {
 	font-family: robotoMono;
-	src: url('fonts/RobotoMono/static/RobotoMono-Regular.ttf');
+	src: url("fonts/RobotoMono/static/RobotoMono-Regular.ttf");
 }
 :root {
 	--blue: #00B9FB;

@@ -102,9 +102,9 @@
 	$socket[1] = array_merge($socket[1], $paragraph["top"]);
 	$s = 0;
 	foreach ($paragraph["top"] as $v) {
-		$s += getFactorsOfNumber($data[$v["text"]]["check_key"]);
+		$s += $data[$v["text"]]["check_key"];
 	}
-	$socket[1][$columnCount + 2]["text"] = $v;
+	$socket[1][$columnCount + 2]["text"] = $s;
 
 	/**/
 	function getFactorsOfNumber(int $number) {

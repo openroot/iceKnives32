@@ -16,6 +16,9 @@
 		"A" => 3, "B" => 2, "C" => 3, "D" => 3, "E" => 3, "F" => 5, "G" => 3, "H" => 4, "I" => 3, "J" => 5, "K" => 5, "L" => 7, "M" => 5, "N" => 5, "O" => 5, "P" => 5, "Q" => 4, "R" => 4, "S" => 5, "T" => 3, "U" => 5, "V" => 2, "W" => 7, "X" => 1, "Y" => 6, "Z" => 6
 	];
 
+	$rowCount = 26;
+	$columnCount = 26;
+
 	/* 1. Raw */
 	$raw = file("32.txt");
 
@@ -56,48 +59,6 @@
 			$grid[$i][$j] = $filter[($j * 26) + $i];
 		}
 	}
-
-	/* 5. Information */
-	$information = [];
-
-	/* 6. Paragraph */
-	$paragraph = [];
-
-	/* 7. Socket */
-	$socket = [];
-
-	/* 8. Tape */
-	$tape = [];
-
-	/* 9. Channel */
-	$channel = [];
-
-	/* 10. Standard */
-	$standard = [];
-
-	/* 11. Diary */
-	$diary = [];
-
-	/* 12. Code */
-	$code = [];
-
-	/* 13. Message */
-	$message = [];
-
-	/* 14. Property */
-	$property = [];
-
-	/* 15. Card */
-	$card = [];
-
-	/* 16. Frame */
-	$frame =[];
-
-	/* 17. Hash */
-	$hash = [];
-
-	/**/
-
 
 	/**/
 	function getFactorsOfNumber(int $number) {

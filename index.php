@@ -63,9 +63,13 @@
 
 	/* 5. Information */
 	$information = [];
-	foreach ($grid as $row) {
-		
-	}
+	$information["top"] = $grid[0];
+	$information["bottom"] = $grid[$rowCount - 1];
+	$information["value"] = array_slice($grid, 1, $rowCount - 2);
+
+	echo "<pre>";
+	print_r($information);
+	echo "</pre>";
 
 	/**/
 	function getFactorsOfNumber(int $number) {

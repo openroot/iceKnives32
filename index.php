@@ -16,11 +16,12 @@
 		"A" => 3, "B" => 2, "C" => 3, "D" => 3, "E" => 3, "F" => 5, "G" => 3, "H" => 4, "I" => 3, "J" => 5, "K" => 5, "L" => 7, "M" => 5, "N" => 5, "O" => 5, "P" => 5, "Q" => 4, "R" => 4, "S" => 5, "T" => 3, "U" => 5, "V" => 2, "W" => 7, "X" => 1, "Y" => 6, "Z" => 6
 	];
 
+	$fileName = "pi.txt";
 	$rowCount = 26;
 	$columnCount = 26;
 
 	/* 1. Raw */
-	$raw = file("32.txt");
+	$raw = file($fileName);
 
 	/* 2. Filter */
 	$filter = [];
@@ -54,9 +55,9 @@
 
 	/* 4. Grid */
 	$grid = [];
-	for ($i = 0; $i <= 25; $i++) {
-		for ($j = 0; $j <= 25; $j++) {
-			$grid[$i][$j] = $filter[($j * 26) + $i];
+	for ($i = 0; $i < $rowCount; $i++) {
+		for ($j = 0; $j < $columnCount; $j++) {
+			$grid[$i][$j] = $filter[($j * $rowCount) + $i];
 		}
 	}
 
@@ -80,16 +81,16 @@
 
 <?php
 	echo "<table>";
-	echo "<tr><td>x</td>";
-	for ($k = 1; $k <= 26; $k++) {
-		echo "<td>" . $k . "</td>";
+	echo "<tr><td>{_f}</td>";
+	for ($k = 1; $k <= $columnCount; $k++) {
+		echo "<td>{" . $k . "}</td>";
 	}
-	echo "<td>sum</td></tr>";
+	echo "<td>{_s}</td></tr>";
 	$i = 1;
 	foreach ($grid as $row) {
 		$sum = 0;
 		echo "<tr>";
-		echo "<td>" . $i++ . "</td>";
+		echo "<td>{" . $i++ . "}</td>";
 		foreach ($row as $column) {
 			echo "<td>";
 			echo '<span class="key">' . $column . '</span><br>';
@@ -98,7 +99,7 @@
 			echo "</td>";
 			$sum += $data[$column]["check_key"];
 		}
-		echo '<td><span tooltip="' . getFactorsOfNumber($sum) . '" flow="left">' . $sum . '</td>';
+		echo '<td><span tooltip="' . getFactorsOfNumber($sum) . '" flow="left">{' . $sum . '}</td>';
 		echo "</tr>";
 	}
 	echo "</table>";

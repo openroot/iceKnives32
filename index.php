@@ -67,9 +67,28 @@
 	$information["bottom"] = $grid[$rowCount - 1];
 	$information["value"] = array_slice($grid, 1, $rowCount - 2);
 
-	echo "<pre>";
-	print_r($information);
-	echo "</pre>";
+	/* 6. Paragraph */
+	$t = count($information["value"]);
+	$paragraph = [];
+	foreach ($information as $k => $set) {
+		if ($k === "value") {
+			foreach ($information["value"] as $i => $row) {
+				foreach ($row as $j => $column) {
+					$paragraph[$k][$i][$j] = [
+						"text" => $information["value"][$i][$j],
+						"numeric_position" => ($j * $t) + $i + 1
+					];
+				}
+			}
+		}
+		else {
+			foreach ($set as $i => $value) {
+				$paragraph[$k][$i] = [
+					"text" => $information[$k][$i]
+				];
+			}
+		}
+	}
 
 	/**/
 	function getFactorsOfNumber(int $number) {
@@ -87,6 +106,11 @@
 		}
 		return $result;
 	}
+
+	echo "<pre>";
+	print_r($paragraph);
+	echo "</pre>";
+
 ?>
 
 <?php

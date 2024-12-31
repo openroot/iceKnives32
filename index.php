@@ -23,7 +23,7 @@
 	$fileNameExtension = explode(".", $fileName)[1];
 
 	/* 1. Raw */
-	$raw = file($fileName);
+	$raw = file("set/chain/" . $fileName . "/" . $fileName);
 
 	/* 2. Filter */
 	$filter = [];

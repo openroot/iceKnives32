@@ -16,9 +16,9 @@
 		"A" => 3, "B" => 2, "C" => 3, "D" => 3, "E" => 3, "F" => 5, "G" => 3, "H" => 4, "I" => 3, "J" => 5, "K" => 5, "L" => 7, "M" => 5, "N" => 5, "O" => 5, "P" => 5, "Q" => 4, "R" => 4, "S" => 5, "T" => 3, "U" => 5, "V" => 2, "W" => 7, "X" => 1, "Y" => 6, "Z" => 6
 	];
 
-	$fileName = "p.i";
+	$fileName = "f.x";
 	$rowCount = 28;
-	$columnCount = 26;
+	$columnCount = 6;
 
 	/* 1. Raw */
 	$raw = file($fileName);
@@ -103,7 +103,7 @@
 	foreach ($paragraph["top"] as $v) {
 		$s += $data[$v["text"]]["check_key"];
 	}
-	$socket[1][$columnCount + 1]["text"] = $s;
+	$socket[1][$columnCount + 1]["text"] = "{" . $s . "}";
 	for ($i = 1; $i < $rowCount - 1; $i++) {
 		$socket[$i + 1][0]["text"] = "{" . $i . "}";
 		//var_dump($paragraph["value"][$i - 1]);
@@ -112,7 +112,7 @@
 		foreach ($paragraph["value"][$i - 1] as $v) {
 			$s += $data[$v["text"]]["check_key"];
 		}
-		$socket[$i + 1][$columnCount + 1]["text"] = $s;
+		$socket[$i + 1][$columnCount + 1]["text"] = "{" . $s . "}";
 	}
 	$socket[$rowCount][0]["text"] = "{" . "_@" . "}";
 	$socket[$rowCount] = array_merge($socket[$rowCount], $paragraph["bottom"]);
@@ -120,7 +120,7 @@
 	foreach ($paragraph["bottom"] as $v) {
 		$s += $data[$v["text"]]["check_key"];
 	}
-	$socket[$rowCount][$columnCount + 1]["text"] = $s;
+	$socket[$rowCount][$columnCount + 1]["text"] = "{" . $s . "}";
 
 	/**/
 	function getFactorsOfNumber(int $number) {
@@ -139,13 +139,14 @@
 		return $result;
 	}
 
-	echo "<pre>";
-	print_r($socket);
-	echo "</pre>";
+	//echo "<pre>";
+	//print_r($socket);
+	//echo "</pre>";
 
 ?>
 
 <?php
+/*
 	echo "<table>";
 	echo "<tr><td>{_f}</td>";
 	for ($k = 1; $k <= $columnCount; $k++) {
@@ -168,6 +169,19 @@
 		echo '<td><span tooltip="' . getFactorsOfNumber($sum) . '" flow="left">{' . $sum . '}</td>';
 		echo "</tr>";
 	}
+	echo "</table>";
+*/
+	
+	echo "<table>";
+	foreach ($socket as $i => $row) {
+		echo "<tr>";
+		foreach ($row as $j => $column) {
+			echo "<td>";
+			echo $column["text"];
+			echo "</td>";
+		}
+		echo "</tr>";
+	}	
 	echo "</table>";
 ?>
 

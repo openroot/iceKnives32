@@ -108,7 +108,6 @@
 	$socket[1][$columnCount + 1]["sum"] = $s;
 	for ($i = 1; $i < $rowCount - 1; $i++) {
 		$socket[$i + 1][0]["text"] = "{" . $i . "}";
-		//var_dump($paragraph["value"][$i - 1]);
 		$socket[$i + 1] = array_merge($socket[$i + 1], $paragraph["value"][$i - 1]);
 		$s = 0;
 		foreach ($paragraph["value"][$i - 1] as $v) {
@@ -144,36 +143,9 @@
 	//echo "<pre>";
 	//print_r($socket);
 	//echo "</pre>";
-
 ?>
 
 <?php
-/*
-	echo "<table>";
-	echo "<tr><td>{_f}</td>";
-	for ($k = 1; $k <= $columnCount; $k++) {
-		echo "<td>{" . $k . "}</td>";
-	}
-	echo "<td>{_s}</td></tr>";
-	$i = 1;
-	foreach ($grid as $row) {
-		$sum = 0;
-		echo "<tr>";
-		echo "<td>{" . $i++ . "}</td>";
-		foreach ($row as $column) {
-			echo "<td>";
-			echo '<span class="key">' . $column . '</span><br>';
-			echo '<span class="linePosition">' . $data[$column]["line_position"] . "</span>" . '<span class="characterLength">' . $data[$column]["character_length"] . '</span>';
-			echo '<span tooltip="' . getFactorsOfNumber($data[$column]["check_key"]) . '"><span class="checkKey">' . $data[$column]["check_key"] . '</span></span>';
-			echo "</td>";
-			$sum += $data[$column]["check_key"];
-		}
-		echo '<td><span tooltip="' . getFactorsOfNumber($sum) . '" flow="left">{' . $sum . '}</td>';
-		echo "</tr>";
-	}
-	echo "</table>";
-*/
-	
 	echo "<table>";
 	foreach ($socket as $i => $row) {
 		echo "<tr>";

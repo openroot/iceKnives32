@@ -16,9 +16,11 @@
 		"A" => 3, "B" => 2, "C" => 3, "D" => 3, "E" => 3, "F" => 5, "G" => 3, "H" => 4, "I" => 3, "J" => 5, "K" => 5, "L" => 7, "M" => 5, "N" => 5, "O" => 5, "P" => 5, "Q" => 4, "R" => 4, "S" => 5, "T" => 3, "U" => 5, "V" => 2, "W" => 7, "X" => 1, "Y" => 6, "Z" => 6
 	];
 
-	$fileName = "f.x";
-	$rowCount = 28;
-	$columnCount = 6;
+	$fileName = isset($_REQUEST["f"]) ? $_REQUEST["f"] : "f.x";
+	$rowCount = isset($_REQUEST["f"]) ? $_REQUEST["r"] : 28;
+	$columnCount = isset($_REQUEST["f"]) ? $_REQUEST["c"] : 6;
+	$fileNameInitial = explode(".", $fileName)[0];
+	$fileNameExtension = explode(".", $fileName)[1];
 
 	/* 1. Raw */
 	$raw = file($fileName);
@@ -92,18 +94,18 @@
 
 	/* 7. Socket */
 	$socket = [];
-	$socket[0][0]["text"] = "{" . "_p" . "}";
+	$socket[0][0]["text"] = "{_" . $fileNameInitial . "}";
 	for ($i = 1; $i <= $columnCount; $i++) {
 		$socket[0][$i]["text"] = "{" . $i . "}";
 	}
 	$socket[0][$columnCount + 1]["text"] = "{" . "_s" . "}";
-	$socket[1][0]["text"] = "{" . "_i" . "}";
+	$socket[1][0]["text"] = "{_" . $fileNameExtension . "}";
 	$socket[1] = array_merge($socket[1], $paragraph["top"]);
 	$s = 0;
 	foreach ($paragraph["top"] as $v) {
 		$s += $data[$v["text"]]["check_key"];
 	}
-	$socket[1][$columnCount + 1]["text"] = "{" . $s . "}";
+	$socket[1][$columnCount + 1]["sum"] = $s;
 	for ($i = 1; $i < $rowCount - 1; $i++) {
 		$socket[$i + 1][0]["text"] = "{" . $i . "}";
 		//var_dump($paragraph["value"][$i - 1]);
@@ -112,7 +114,7 @@
 		foreach ($paragraph["value"][$i - 1] as $v) {
 			$s += $data[$v["text"]]["check_key"];
 		}
-		$socket[$i + 1][$columnCount + 1]["text"] = "{" . $s . "}";
+		$socket[$i + 1][$columnCount + 1]["sum"] = $s;
 	}
 	$socket[$rowCount][0]["text"] = "{" . "_@" . "}";
 	$socket[$rowCount] = array_merge($socket[$rowCount], $paragraph["bottom"]);
@@ -120,7 +122,7 @@
 	foreach ($paragraph["bottom"] as $v) {
 		$s += $data[$v["text"]]["check_key"];
 	}
-	$socket[$rowCount][$columnCount + 1]["text"] = "{" . $s . "}";
+	$socket[$rowCount][$columnCount + 1]["sum"] = $s;
 
 	/**/
 	function getFactorsOfNumber(int $number) {
@@ -177,7 +179,17 @@
 		echo "<tr>";
 		foreach ($row as $j => $column) {
 			echo "<td>";
-			echo $column["text"];
+			if (array_key_exists("text", $column)) {
+				echo '<span class="key">' . $column["text"] . '</span>';
+			}
+			if (array_key_exists("sum", $column)) {
+				echo '<span tooltip="' . getFactorsOfNumber($column["sum"]) . '" flow="left">{' . $column["sum"] . '}';
+			}
+			if (array_key_exists("numeric_position", $column)) {
+				echo "<br>";
+				echo '<span class="numericPosition">' . $column["numeric_position"] . "</span>" . '<span class="characterLength">' . $data[$column["text"]]["character_length"] . '</span>';
+				echo '<span tooltip="' . getFactorsOfNumber($data[$column["text"]]["check_key"]) . '"><span class="checkKey">' . $data[$column["text"]]["check_key"] . '</span></span>';
+			}
 			echo "</td>";
 		}
 		echo "</tr>";

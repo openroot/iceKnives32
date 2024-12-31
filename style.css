@@ -49,8 +49,7 @@ table {
 table td {
 	border-bottom: 1px dotted var(--white);
 }
-table span.numericPosition,
-table span.linePosition {
+table span.numericPosition {
 	padding: 0 3px;
 	background-color: var(--green);
 	color: var(--greyDeep);

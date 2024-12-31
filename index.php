@@ -33,7 +33,6 @@
 	}
 
 	/* 3. Data */
-	$linePosition = 1;
 	$data = [];
 	foreach ($filter as $key) {
 		$noncharacterCount = 0;
@@ -48,7 +47,6 @@
 			}
 		}
 		$data[$key] = [
-			"line_position" => $linePosition++,
 			"character_length" => strlen($key),
 			"noncharacter_count" => $noncharacterCount,
 			"check_key" => $checkKey

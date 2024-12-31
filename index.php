@@ -120,6 +120,9 @@
 		$s += $data[$v["text"]]["check_key"];
 	}
 	$socket[$rowCount][$columnCount + 1]["sum"] = $s;
+	$socket[$rowCount + 1][0]["text"] = "{_s}";
+	$socket[$rowCount + 2][0]["text"] = "{_t}";
+	$socket[$rowCount + 3][0]["text"] = "{_#}";
 
 	/**/
 	function getFactorsOfNumber(int $number) {

@@ -16,9 +16,9 @@
 		"A" => 3, "B" => 2, "C" => 3, "D" => 3, "E" => 3, "F" => 5, "G" => 3, "H" => 4, "I" => 3, "J" => 5, "K" => 5, "L" => 7, "M" => 5, "N" => 5, "O" => 5, "P" => 5, "Q" => 4, "R" => 4, "S" => 5, "T" => 3, "U" => 5, "V" => 2, "W" => 7, "X" => 1, "Y" => 6, "Z" => 6
 	];
 
-	$fileName = "pi.txt";
-	$rowCount = 26;
-	$columnCount = 26;
+	$fileName = "f.x";
+	$rowCount = 28;
+	$columnCount = 6;
 
 	/* 1. Raw */
 	$raw = file($fileName);
@@ -31,7 +31,7 @@
 	}
 
 	/* 3. Data */
-	$position = 1;
+	$linePosition = 1;
 	$data = [];
 	foreach ($filter as $key) {
 		$noncharacterCount = 0;
@@ -46,7 +46,7 @@
 			}
 		}
 		$data[$key] = [
-			"position_numeric" => $position++,
+			"line_position" => $linePosition++,
 			"character_length" => strlen($key),
 			"noncharacter_count" => $noncharacterCount,
 			"check_key" => $checkKey
@@ -59,6 +59,12 @@
 		for ($j = 0; $j < $columnCount; $j++) {
 			$grid[$i][$j] = $filter[($j * $rowCount) + $i];
 		}
+	}
+
+	/* 5. Information */
+	$information = [];
+	foreach ($grid as $row) {
+		
 	}
 
 	/**/
@@ -94,7 +100,7 @@
 		foreach ($row as $column) {
 			echo "<td>";
 			echo '<span class="key">' . $column . '</span><br>';
-			echo '<span class="positionNumeric">' . $data[$column]["position_numeric"] . "</span>" . '<span class="characterLength">' . $data[$column]["character_length"] . '</span>';
+			echo '<span class="linePosition">' . $data[$column]["line_position"] . "</span>" . '<span class="characterLength">' . $data[$column]["character_length"] . '</span>';
 			echo '<span tooltip="' . getFactorsOfNumber($data[$column]["check_key"]) . '"><span class="checkKey">' . $data[$column]["check_key"] . '</span></span>';
 			echo "</td>";
 			$sum += $data[$column]["check_key"];

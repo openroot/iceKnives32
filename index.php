@@ -121,6 +121,13 @@
 	}
 	$socket[$rowCount][$columnCount + 1]["sum"] = $s;
 	$socket[$rowCount + 1][0]["text"] = "{_s}";
+	$s1 = 0;
+	foreach ($paragraph["value"] as $i => $row) {
+		$s = 0;
+		foreach ($row as $j => $column) {
+
+		}
+	}
 	$socket[$rowCount + 2][0]["text"] = "{_t}";
 	$socket[$rowCount + 3][0]["text"] = "{_#}";
 

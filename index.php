@@ -82,13 +82,29 @@
 			}
 		}
 		else {
-			foreach ($set as $i => $value) {
+			foreach ($set as $i => $v) {
 				$paragraph[$k][$i] = [
 					"text" => $information[$k][$i]
 				];
 			}
 		}
 	}
+
+	/* 7. Socket */
+	$socket = [];
+	$socket[0][0]["text"] = "{" . "_p" . "}";
+	for ($i = 1; $i <= $columnCount; $i++) {
+		$socket[0][$i]["text"] = "{" . $i . "}";
+	}
+	$socket[0][$columnCount + 1]["text"] = "{" . "_s" . "}";
+
+	$socket[1][0]["text"] = "{" . "_i" . "}";
+	$socket[1] = array_merge($socket[1], $paragraph["top"]);
+	$s = 0;
+	foreach ($paragraph["top"] as $v) {
+		$s += getFactorsOfNumber($data[$v["text"]]["check_key"]);
+	}
+	$socket[1][$columnCount + 2]["text"] = $v;
 
 	/**/
 	function getFactorsOfNumber(int $number) {
@@ -108,7 +124,7 @@
 	}
 
 	echo "<pre>";
-	print_r($paragraph);
+	print_r($socket);
 	echo "</pre>";
 
 ?>

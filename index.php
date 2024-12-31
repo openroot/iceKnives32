@@ -97,14 +97,30 @@
 		$socket[0][$i]["text"] = "{" . $i . "}";
 	}
 	$socket[0][$columnCount + 1]["text"] = "{" . "_s" . "}";
-
 	$socket[1][0]["text"] = "{" . "_i" . "}";
 	$socket[1] = array_merge($socket[1], $paragraph["top"]);
 	$s = 0;
 	foreach ($paragraph["top"] as $v) {
 		$s += $data[$v["text"]]["check_key"];
 	}
-	$socket[1][$columnCount + 2]["text"] = $s;
+	$socket[1][$columnCount + 1]["text"] = $s;
+	for ($i = 1; $i < $rowCount - 1; $i++) {
+		$socket[$i + 1][0]["text"] = "{" . $i . "}";
+		//var_dump($paragraph["value"][$i - 1]);
+		$socket[$i + 1] = array_merge($socket[$i + 1], $paragraph["value"][$i - 1]);
+		$s = 0;
+		foreach ($paragraph["value"][$i - 1] as $v) {
+			$s += $data[$v["text"]]["check_key"];
+		}
+		$socket[$i + 1][$columnCount + 1]["text"] = $s;
+	}
+	$socket[$rowCount][0]["text"] = "{" . "_@" . "}";
+	$socket[$rowCount] = array_merge($socket[$rowCount], $paragraph["bottom"]);
+	$s = 0;
+	foreach ($paragraph["bottom"] as $v) {
+		$s += $data[$v["text"]]["check_key"];
+	}
+	$socket[$rowCount][$columnCount + 1]["text"] = $s;
 
 	/**/
 	function getFactorsOfNumber(int $number) {

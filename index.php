@@ -8,6 +8,7 @@
 	$website = new htmlSegment\website(
 		"iceKnives32",
 		"utf-8",
+		['name="viewport" content="width=device-width, initial-scale=1"'],
 		["internet/website/css/style.css"],
 		[],
 		"Asia/Kolkata"

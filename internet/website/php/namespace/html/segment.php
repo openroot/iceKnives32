@@ -6,13 +6,15 @@
 	class website {
 		private string $title;
 		private string $charset;
+		private array $meta;
 		private array $css;
 		private array $js;
 		private string $timeZone;
 
-		function __construct(?string $title = null, ?string $charset = null, ?array $css = null, ?array $js = null, ?string $timeZone = null) {
+		function __construct(?string $title = null, ?string $charset = null, ?array $meta = null, ?array $css = null, ?array $js = null, ?string $timeZone = null) {
 			$this->title = isset($title) ? $title : "iceKnives32";
 			$this->charset = isset($charset) ? $charset : "utf-8";
+			$this->meta = isset($meta) && count($meta) > 0 ? $meta : ['name="viewport" content="width=device-width, initial-scale=1"'];
 			$this->css = isset($css) && count($css) > 0 ? $css : ["internet/website/css/style.css"];
 			$this->js = isset($js) && count($js) > 0 ? $js : [];
 			$this->timeZone = isset($timeZone) ? $timeZone : "Asia/Kolkata";
@@ -29,8 +31,10 @@
 						<html lang="en">
 							<head>
 								<title>' . $this->title . '</title>
-								<meta charset="' . $this->charset . '">
-								<meta name="viewport" content="width=device-width, initial-scale=1">';
+								<meta charset="' . $this->charset . '">';
+			foreach ($this->meta as $v) {
+				$result .= '<meta ' . $v .'>';
+			}
 			foreach ($this->css as $v) {
 				$result .= '<link rel="stylesheet" href="' . $v .'">';
 			}

@@ -1,18 +1,32 @@
 <?php
 	require_once("internet/website/php/namespace/html/segment.php");
+	require_once("internet/website/php/namespace/environment/configuration.php");
 
 	use html\segment as htmlSegment;
+	use environment\configuration as environmentConfiguration;
 ?>
 
 <?php
-	$website = new htmlSegment\website(
-		"iceKnives32",
-		"utf-8",
-		['name="viewport" content="width=device-width, initial-scale=1"'],
-		["internet/website/css/style.css"],
-		[],
-		"Asia/Kolkata"
-	);
+	$websiteConfiguration = null;
+	$environmentConfiguration = new environmentConfiguration\data();
+	if (isset($environmentConfiguration) && isset($environmentConfiguration->value()["internet"]["website"]["php"]["namespace"]["html"]["segment"]["website"])) {
+		$websiteConfiguration = $environmentConfiguration->value()["internet"]["website"]["php"]["namespace"]["html"]["segment"]["website"];
+	}
+	if (!keysExistsInArray($websiteConfiguration, ["title", "charset", "meta", "css", "js", "timeZone"])) {
+		$websiteConfiguration = null;
+	}
+	if (!isset($websiteConfiguration)) {
+		$websiteConfiguration = [
+			"title" => "iceKnives32",
+			"charset" => "utf-8",
+			"meta" => ['name="viewport" content="width=device-width, initial-scale=1"'],
+			"css" => ["internet/website/css/style.css"],
+			"js" => [],
+			"timeZone" => "Asia/Kolkata"
+		];
+	}
+	
+	$website = new htmlSegment\website($websiteConfiguration["title"], $websiteConfiguration["charset"], $websiteConfiguration["meta"], $websiteConfiguration["css"], $websiteConfiguration["js"], $websiteConfiguration["timeZone"]);
 	echo $website->head();
 ?>
 
@@ -139,7 +153,7 @@
 	$socket[$rowCount + 3][0]["text"] = "{_#}";
 
 	/**/
-	function getFactorsOfNumber(int $number) {
+	function getFactorsOfNumber(int $number): string {
 		$result = "";
 		if ($number > 0) {
 			$factor;
@@ -150,6 +164,17 @@
 			}
 			if (strlen($result) > 0) {
 				$result = substr($result, 0, -2);
+			}
+		}
+		return $result;
+	}
+
+	function keysExistsInArray(array $hash, array $needle): bool {
+		$result = true;
+		foreach ($needle as $v) {
+			if (!array_key_exists($v, $hash)) {
+				$result = false;
+				break;
 			}
 		}
 		return $result;

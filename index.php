@@ -20,7 +20,7 @@
 			"title" => "iceKnives32",
 			"charset" => "utf-8",
 			"meta" => ['name="viewport" content="width=device-width, initial-scale=1"'],
-			"css" => ["internet/website/css/style.css"],
+			"css" => ["internet/website/css/iceKnives32/style.css"],
 			"js" => [],
 			"timeZone" => "Asia/Kolkata"
 		];

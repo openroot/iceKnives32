@@ -1,5 +1,6 @@
 <?php
 	require_once("internet/website/php/namespace/application/segment.php");
+	require_once("internet/website/php/namespace/library/memory/unit/associative/range.php");
 
 	use application\segment as applicationSegment;
 ?>
@@ -17,11 +18,14 @@
 ?>
 
 <?php
-	echo "Hello World!";
-	echo "<br>";
+	echo "Hello World! It's " . $webpage->time() . ".";
+	echo "<br><hr><br><br>";
+
+	// Following space can be used for R&D at developmet.
+	$t = new library\memory\unit\associative\range(["acco", "unt"]);
+	echo $t->count();
 ?>
 
 <?php
-	echo $webpage->time();
 	echo $webpage->foot();
 ?>

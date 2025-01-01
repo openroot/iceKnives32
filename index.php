@@ -1,6 +1,5 @@
 <?php
 	require_once("internet/website/php/namespace/module/type/english/alphabet.php");
-	require_once("internet/website/php/namespace/library/memory/unit/associative/plain.php");
 	require_once("internet/website/php/namespace/environment/configuration.php");
 	require_once("internet/website/php/namespace/application/segment.php");
 

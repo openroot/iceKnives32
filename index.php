@@ -1,13 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>iceKnives32</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="internet/website/css/style.css">
-		<script src=""></script>
-	</head>
-	<body>
+<?php
+	require_once("internet/website/php/namespace/html/segment.php");
+
+	use html\segment as htmlSegment;
+?>
+
+<?php
+	$website = new htmlSegment\website(
+		"iceKnives32",
+		"utf-8",
+		["internet/website/css/style.css"],
+		[],
+		"Asia/Kolkata"
+	);
+	echo $website->head();
+?>
 
 <?php
 	/* x. Context */
@@ -177,5 +183,7 @@
 	echo "</table>";
 ?>
 
-	</body>
-</html>
+<?php
+	echo $website->time();
+	echo $website->foot();
+?>

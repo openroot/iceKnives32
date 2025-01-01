@@ -153,7 +153,7 @@
 	$socket[$rowCount + 3][0]["text"] = "{_#}";
 
 	/**/
-	function getFactorsOfNumber(int $number): string {
+	function factorsOfNumber(int $number): string {
 		$result = "";
 		if ($number > 0) {
 			$factor;
@@ -195,12 +195,12 @@
 				echo '<span class="key">' . $column["text"] . '</span>';
 			}
 			if (array_key_exists("sum", $column)) {
-				echo '<span tooltip="' . getFactorsOfNumber($column["sum"]) . '" flow="left">{' . $column["sum"] . '}';
+				echo '<span tooltip="' . factorsOfNumber($column["sum"]) . '" flow="left">{' . $column["sum"] . '}';
 			}
 			if (array_key_exists("numeric_position", $column)) {
 				echo "<br>";
 				echo '<span class="numericPosition">' . $column["numeric_position"] . "</span>" . '<span class="characterLength">' . $data[$column["text"]]["character_length"] . '</span>';
-				echo '<span tooltip="' . getFactorsOfNumber($data[$column["text"]]["check_key"]) . '"><span class="checkKey">' . $data[$column["text"]]["check_key"] . '</span></span>';
+				echo '<span tooltip="' . factorsOfNumber($data[$column["text"]]["check_key"]) . '"><span class="checkKey">' . $data[$column["text"]]["check_key"] . '</span></span>';
 			}
 			echo "</td>";
 		}

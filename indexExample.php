@@ -1,19 +1,19 @@
 <?php
-	require_once("internet/website/php/namespace/html/segment.php");
+	require_once("internet/website/php/namespace/application/segment.php");
 
-	use html\segment as htmlSegment;
+	use application\segment as applicationSegment;
 ?>
 
 <?php
-	$website = new htmlSegment\website(
+	$webpage = new applicationSegment\webpage(
 		"iceKnives32",
 		"utf-8",
 		['name="viewport" content="width=device-width, initial-scale=1"'],
-		["internet/website/css/style.css"],
+		["internet/website/css/iceKnives32/style.css"],
 		[],
 		"Asia/Kolkata"
 	);
-	echo $website->head();
+	echo $webpage->head();
 ?>
 
 <?php
@@ -22,6 +22,6 @@
 ?>
 
 <?php
-	echo $website->time();
-	echo $website->foot();
+	echo $webpage->time();
+	echo $webpage->foot();
 ?>

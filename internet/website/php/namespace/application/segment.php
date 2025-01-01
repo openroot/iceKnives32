@@ -1,9 +1,9 @@
 <?php
-	namespace html\segment;
+	namespace application\segment;
 ?>
 
 <?php
-	class website {
+	class webpage {
 		private string $title;
 		private string $charset;
 		private array $meta;

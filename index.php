@@ -1,22 +1,22 @@
 <?php
-	require_once("internet/website/php/namespace/html/segment.php");
+	require_once("internet/website/php/namespace/application/segment.php");
 	require_once("internet/website/php/namespace/environment/configuration.php");
 
-	use html\segment as htmlSegment;
+	use application\segment as applicationSegment;
 	use environment\configuration as environmentConfiguration;
 ?>
 
 <?php
-	$websiteConfiguration = null;
+	$webpageConfiguration = null;
 	$environmentConfiguration = new environmentConfiguration\data();
-	if (isset($environmentConfiguration) && isset($environmentConfiguration->value()["internet"]["website"]["php"]["namespace"]["html"]["segment"]["website"])) {
-		$websiteConfiguration = $environmentConfiguration->value()["internet"]["website"]["php"]["namespace"]["html"]["segment"]["website"];
+	if (isset($environmentConfiguration) && isset($environmentConfiguration->value()["internet"]["website"]["php"]["namespace"]["application"]["segment"]["webpage"])) {
+		$webpageConfiguration = $environmentConfiguration->value()["internet"]["website"]["php"]["namespace"]["application"]["segment"]["webpage"];
 	}
-	if (!keysExistsInArray($websiteConfiguration, ["title", "charset", "meta", "css", "js", "timeZone"])) {
-		$websiteConfiguration = null;
+	if (!keysExistsInArray($webpageConfiguration, ["title", "charset", "meta", "css", "js", "timeZone"])) {
+		$webpageConfiguration = null;
 	}
-	if (!isset($websiteConfiguration)) {
-		$websiteConfiguration = [
+	if (!isset($webpageConfiguration)) {
+		$webpageConfiguration = [
 			"title" => "iceKnives32",
 			"charset" => "utf-8",
 			"meta" => ['name="viewport" content="width=device-width, initial-scale=1"'],
@@ -26,8 +26,8 @@
 		];
 	}
 	
-	$website = new htmlSegment\website($websiteConfiguration["title"], $websiteConfiguration["charset"], $websiteConfiguration["meta"], $websiteConfiguration["css"], $websiteConfiguration["js"], $websiteConfiguration["timeZone"]);
-	echo $website->head();
+	$webpage = new applicationSegment\webpage($webpageConfiguration["title"], $webpageConfiguration["charset"], $webpageConfiguration["meta"], $webpageConfiguration["css"], $webpageConfiguration["js"], $webpageConfiguration["timeZone"]);
+	echo $webpage->head();
 ?>
 
 <?php
@@ -210,6 +210,6 @@
 ?>
 
 <?php
-	echo $website->time();
-	echo $website->foot();
+	echo $webpage->time();
+	echo $webpage->foot();
 ?>

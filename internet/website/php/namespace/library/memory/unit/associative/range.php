@@ -9,7 +9,9 @@
 
 		function __construct(?array $value) {
 			$this->value = $value;
+			$this->count = 0;
 			if (isset($this->value) && array_is_list($this->value)) {
+				$this->value = array_values($this->value);
 				$this->count = count($this->value, COUNT_NORMAL);
 			}
 		}

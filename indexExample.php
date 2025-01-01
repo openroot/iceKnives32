@@ -18,12 +18,22 @@
 ?>
 
 <?php
-	echo "Hello World! It's " . $webpage->time() . ".";
-	echo "<br><hr><br><br>";
+	echo "Hello World! It's " . $webpage->time() . ".<br>";
+	echo "<br><br>";
 
-	// Following space can be used for R&D at developmet.
+	// Following space can be used for R&D at development.
+	echo "-Example(s)-<br>";
+	echo "<ul>";
+
+	echo "<li>";
+	echo "library\memory\unit\associative\\range() [class]<br>";
 	$t = new library\memory\unit\associative\range(["acco", "unt"]);
-	echo $t->count();
+	echo "Value: "; print_r($t->value()); echo "<br>";
+	echo "Count: " . $t->count();
+	echo "</li>";
+	
+	echo "</ul>";
+	echo "<br><br>";
 ?>
 
 <?php

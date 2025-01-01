@@ -1,14 +1,14 @@
 <?php
 	require_once("internet/website/php/namespace/application/segment.php");
 	require_once("internet/website/php/namespace/environment/configuration.php");
+	require_once("internet/website/php/namespace/module/type/english/alphabet.php");
 
 	use application\segment as applicationSegment;
-	use environment\configuration as environmentConfiguration;
 ?>
 
 <?php
 	$webpageConfiguration = null;
-	$environmentConfiguration = new environmentConfiguration\data();
+	$environmentConfiguration = new environment\configuration\data();
 	if (isset($environmentConfiguration) && isset($environmentConfiguration->value()["internet"]["website"]["php"]["namespace"]["application"]["segment"]["webpage"])) {
 		$webpageConfiguration = $environmentConfiguration->value()["internet"]["website"]["php"]["namespace"]["application"]["segment"]["webpage"];
 	}
@@ -32,10 +32,7 @@
 
 <?php
 	/* x. Context */
-	$letterCodes = [
-		"a" => 3, "b" => 2, "c" => 3, "d" => 3, "e" => 3, "f" => 5, "g" => 3, "h" => 4, "i" => 3, "j" => 5, "k" => 5, "l" => 7, "m" => 5, "n" => 5, "o" => 5, "p" => 5, "q" => 4, "r" => 4, "s" => 5, "t" => 3, "u" => 5, "v" => 2, "w" => 7, "x" => 1, "y" => 6, "z" => 6,
-		"A" => 3, "B" => 2, "C" => 3, "D" => 3, "E" => 3, "F" => 5, "G" => 3, "H" => 4, "I" => 3, "J" => 5, "K" => 5, "L" => 7, "M" => 5, "N" => 5, "O" => 5, "P" => 5, "Q" => 4, "R" => 4, "S" => 5, "T" => 3, "U" => 5, "V" => 2, "W" => 7, "X" => 1, "Y" => 6, "Z" => 6
-	];
+	$alphabetCode = module\type\english\alphabet::code;
 
 	$fileName = isset($_REQUEST["f"]) ? $_REQUEST["f"] : "f.x";
 	$rowCount = isset($_REQUEST["f"]) ? $_REQUEST["r"] : 28;
@@ -60,11 +57,11 @@
 		$checkKey = 0;
 		$characters = str_split($key);
 		foreach ($characters as $character) {
-			if (!array_key_exists($character, $letterCodes)) {
+			if (!array_key_exists($character, $alphabetCode)) {
 				$noncharacterCount++;
 			}
 			else {
-				$checkKey += $letterCodes[$character];
+				$checkKey += $alphabetCode[$character];
 			}
 		}
 		$data[$key] = [

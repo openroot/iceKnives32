@@ -32,6 +32,14 @@
 		public function count(): int {
 			return $this->count;
 		}
+
+		public function firstValue(): mixed {
+			return isset($this->value) && $this->count > 0 ? $this->value[0] : null;
+		}
+
+		public function lastValue(): int {
+			return $this->count;
+		}
 	}
 
 	class dictionary {

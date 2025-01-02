@@ -7,12 +7,21 @@
 		private ?array $value;
 		private int $count;
 
-		function __construct(?array $value) {
-			$this->value = $value;
+		function __construct(?array $value = null) {
+			$this->value = null;
 			$this->count = 0;
-			if (isset($this->value) && array_is_list($this->value)) {
-				$this->value = array_values($this->value);
-				$this->count = count($this->value, COUNT_NORMAL);
+			if (isset($value)) {
+				$i = 0;
+				foreach ($value as $v) {
+					if (is_array($v) || is_object($v)) {
+						$this->value = null;
+						break;
+					}
+					else {
+						$this->value[$i++] = $v;
+					}
+				}
+				$this->count = isset($this->value) ? count($this->value, COUNT_NORMAL) : $this->count;
 			}
 		}
 

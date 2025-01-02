@@ -71,7 +71,7 @@ Tray			Pen
 Offer			Match			
 Chalk			Fuse			
 Loop			Lock			
-Supply			
+Supply			Comment			
 Stitch			
 Probability		
 Fashion			

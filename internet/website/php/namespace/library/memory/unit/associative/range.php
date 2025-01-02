@@ -73,6 +73,31 @@
 			}
 			return $result;
 		}
+
+		public function find(): bool {
+			$result = false;
+			return $result;
+		}
+
+		public function delete(): bool {
+			$result = false;
+			return $result;
+		}
+
+		public function chunk(): bool {
+			$result = false;
+			return $result;
+		}
+
+		public function part(): bool {
+			$result = false;
+			return $result;
+		}
+
+		public function sort(): bool {
+			$result = false;
+			return $result;
+		}
 	}
 
 	class dictionary {

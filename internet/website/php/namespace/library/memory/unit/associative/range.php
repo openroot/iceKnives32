@@ -37,8 +37,8 @@
 			return isset($this->value) && $this->count > 0 ? $this->value[0] : null;
 		}
 
-		public function lastValue(): int {
-			return $this->count;
+		public function lastValue(): mixed {
+			return isset($this->value) && $this->count > 0 ? $this->value[$this->count - 1] : null;
 		}
 	}
 

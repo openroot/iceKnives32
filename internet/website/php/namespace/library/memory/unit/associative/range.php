@@ -49,9 +49,20 @@
 			else {
 				if (!isset($position)) {
 					$this->value[$this->count++] = $data;
+					$result = true;
 				}
-				else {
-
+				else if ($position <= $this->count + 1) {
+					/*$c = 0;
+					$t = $this->value;
+					$this->value = [];
+					for ($i = 0; $i < $this->count + 1; $i++) {
+						if ($i === $position - 1) {
+							$this->value[$c] = $data;
+						}
+						$this->value[$c] = $t[$c];
+						$c++;
+					}
+					$result = true;*/
 				}
 			}
 			return $result;

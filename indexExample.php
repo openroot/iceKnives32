@@ -35,6 +35,9 @@
 	$t->add("net");
 	echo "<br>Value: "; print_r($t->value());
 	echo "<br>Count: " . $t->count();
+	$t->add("top", $t->count() + 1);
+	echo "<br>Value: "; print_r($t->value());
+	echo "<br>Count: " . $t->count();
 	echo "<br>";
 	$t = new library\memory\unit\associative\range(["foo" => ["lorem", "ipsum"], "bar"]);
 	echo "<br>Value: "; print_r($t->value());

@@ -99,8 +99,4 @@
 			return $result;
 		}
 	}
-
-	class dictionary {
-		function __construct() { }
-	}
 ?>

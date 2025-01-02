@@ -28,20 +28,20 @@
 	echo "<li>";
 	echo "[class] library\memory\unit\associative\\range()<br>";
 	$t = new library\memory\unit\associative\range([25, "foo", "bar", null, "set", true, 1.7]);
-	echo "<br>[function] value(): "; print_r($t->value());
-	echo "<br>[function] count(): " . $t->count();
+	echo "<br>[property] source: "; print_r($t->source);
+	echo "<br>[property] count: " . $t->count;
 	echo "<br>[function] first(): " . $t->first();
 	echo "<br>[function] last(): " . $t->last();
 	$t->add("net");
-	echo "<br>[function] value(): "; print_r($t->value());
-	echo "<br>[function] count(): " . $t->count();
+	echo "<br>[property] source: "; print_r($t->source);
+	echo "<br>[property] count: " . $t->count;
 	$t->add("top", 8);
-	echo "<br>[function] value(): "; print_r($t->value());
-	echo "<br>[function] count(): " . $t->count();
+	echo "<br>[property] source: "; print_r($t->source);
+	echo "<br>[property] count: " . $t->count;
 	echo "<br>";
 	$t = new library\memory\unit\associative\range(["foo" => ["lorem", "ipsum"], "bar"]);
-	echo "<br>[function] value(): "; print_r($t->value());
-	echo "<br>[function] count(): " . $t->count();
+	echo "<br>[property] source: "; print_r($t->source);
+	echo "<br>[property] count: " . $t->count;
 	echo "</li>";
 
 	echo "</ul>";

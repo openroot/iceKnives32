@@ -4,41 +4,49 @@
 
 <?php
 	class range {
-		private ?array $value;
+		private ?array $source;
 		private int $count;
 
-		function __construct(?array $value = null) {
-			$this->value = null;
+		function __construct(?array $source = null) {
+			$this->source = null;
 			$this->count = 0;
-			if (isset($value)) {
+			if (isset($source)) {
 				$i = 0;
-				foreach ($value as $v) {
-					if (is_array($v) || is_object($v)) {
-						$this->value = null;
+				foreach ($source as $s) {
+					if (is_array($s) || is_object($s)) {
+						$this->source = null;
 						break;
 					}
 					else {
-						$this->value[$i++] = $v;
+						$this->source[$i++] = $s;
 					}
 				}
-				$this->count = isset($this->value) ? count($this->value, COUNT_NORMAL) : $this->count;
+				$this->count = isset($this->source) ? count($this->source, COUNT_NORMAL) : $this->count;
 			}
 		}
 
-		public function value(): ?array {
-			return $this->value;
-		}
-
-		public function count(): int {
-			return $this->count;
+		public function __get($name): mixed {
+			switch($name) {
+				case "source":
+					return $this->source;
+					break;
+				case "count":
+					return $this->count;
+					break;
+			}
 		}
 
 		public function first(): mixed {
-			return isset($this->value) && $this->count > 0 ? $this->value[0] : null;
+			return isset($this->source) && $this->count > 0 ? $this->source[0] : null;
 		}
 
 		public function last(): mixed {
-			return isset($this->value) && $this->count > 0 ? $this->value[$this->count - 1] : null;
+			return isset($this->source) && $this->count > 0 ? $this->source[$this->count - 1] : null;
+		}
+
+		public function update(): bool {
+			$result = false;
+			return $result;
 		}
 
 		public function add(mixed $data, ?int $position = null): bool {
@@ -48,23 +56,23 @@
 			}
 			else {
 				if (!isset($position)) {
-					$this->value[$this->count++] = $data;
+					$this->source[$this->count++] = $data;
 					$result = true;
 				}
 				else if ($position > 0 && $position <= $this->count + 1) {
 					$c = 0;
-					$t = $this->value;
-					$this->value = [];
+					$t = $this->source;
+					$this->source = [];
 					if ($position === $this->count + 1) {
 						$t[$this->count + 1] = $data;
-						$this->value = $t;
+						$this->source = $t;
 					}
 					else {
 						for ($i = 0; $i < $this->count; $i++) {
 							if ($i === $position - 1) {
-								$this->value[$c++] = $data;
+								$this->source[$c++] = $data;
 							}
-							$this->value[$c++] = $t[$i];
+							$this->source[$c++] = $t[$i];
 						}
 					}
 					$this->count++;
@@ -95,6 +103,21 @@
 		}
 
 		public function sort(): bool {
+			$result = false;
+			return $result;
+		}
+
+		public function reset(): bool {
+			$result = false;
+			return $result;
+		}
+
+		public function modified(): bool {
+			$result = false;
+			return $result;
+		}
+
+		public function truncate(): bool {
 			$result = false;
 			return $result;
 		}

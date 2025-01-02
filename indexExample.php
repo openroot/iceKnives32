@@ -34,7 +34,7 @@
 	echo "Value: "; print_r($t->value()); echo "<br>";
 	echo "Count: " . $t->count();
 	echo "</li>";
-	
+
 	echo "</ul>";
 	echo "<br><br>";
 ?>

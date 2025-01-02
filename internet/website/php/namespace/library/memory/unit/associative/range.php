@@ -51,18 +51,24 @@
 					$this->value[$this->count++] = $data;
 					$result = true;
 				}
-				else if ($position <= $this->count + 1) {
-					/*$c = 0;
+				else if ($position > 0 && $position <= $this->count + 1) {
+					$c = 0;
 					$t = $this->value;
 					$this->value = [];
-					for ($i = 0; $i < $this->count + 1; $i++) {
-						if ($i === $position - 1) {
-							$this->value[$c] = $data;
-						}
-						$this->value[$c] = $t[$c];
-						$c++;
+					if ($position === $this->count + 1) {
+						$t[$this->count + 1] = $data;
+						$this->value = $t;
 					}
-					$result = true;*/
+					else {
+						for ($i = 0; $i < $this->count; $i++) {
+							if ($i === $position - 1) {
+								$this->value[$c++] = $data;
+							}
+							$this->value[$c++] = $t[$i];
+						}
+					}
+					$this->count++;
+					$result = true;
 				}
 			}
 			return $result;

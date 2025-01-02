@@ -35,7 +35,7 @@
 	$t->add("net");
 	echo "<br>Value: "; print_r($t->value());
 	echo "<br>Count: " . $t->count();
-	$t->add("top", $t->count() + 1);
+	$t->add("top", 8);
 	echo "<br>Value: "; print_r($t->value());
 	echo "<br>Count: " . $t->count();
 	echo "<br>";

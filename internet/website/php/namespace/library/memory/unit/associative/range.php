@@ -26,7 +26,7 @@
 		}
 
 		public function __get($name): mixed {
-			switch($name) {
+			switch ($name) {
 				case "source":
 					return $this->source;
 					break;

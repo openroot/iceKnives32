@@ -27,11 +27,14 @@
 
 	echo "<li>";
 	echo "library\memory\unit\associative\\range() [class]<br>";
-	$t = new library\memory\unit\associative\range([25, "foo", "bar", "set"]);
+	$t = new library\memory\unit\associative\range([25, "foo", "bar", null, "set", true, 1.7]);
 	echo "<br>Value: "; print_r($t->value());
 	echo "<br>Count: " . $t->count();
-	echo "<br>First value: " . $t->firstValue();
-	echo "<br>Last value: " . $t->lastValue();
+	echo "<br>First data: " . $t->first();
+	echo "<br>Last data: " . $t->last();
+	$t->add("net");
+	echo "<br>Value: "; print_r($t->value());
+	echo "<br>Count: " . $t->count();
 	echo "<br>";
 	$t = new library\memory\unit\associative\range(["foo" => ["lorem", "ipsum"], "bar"]);
 	echo "<br>Value: "; print_r($t->value());

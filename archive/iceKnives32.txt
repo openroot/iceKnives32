@@ -68,8 +68,8 @@ Basket			Query			Amount
 Catch			Formula			Cheat			
 Wrap			Rack			Plan			
 Tray			Pen				Wire			
-Offer			Match			
-Chalk			Fuse			
+Offer			Match			Empty			
+Chalk			Fuse			Compound		
 Loop			Lock			
 Supply			Comment			
 Stitch			Try				

@@ -66,8 +66,8 @@ Amount
 Cheat
 Plan
 Wire
--
--
+Empty
+Compound
 -
 -
 -

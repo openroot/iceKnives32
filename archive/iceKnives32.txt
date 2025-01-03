@@ -66,7 +66,7 @@ Develop			Degree			Percent
 Exist			Clone			Twist			
 Basket			Query			Amount			
 Catch			Formula			Cheat			
-Wrap			Rack			
+Wrap			Rack			Plan			
 Tray			Pen				
 Offer			Match			
 Chalk			Fuse			

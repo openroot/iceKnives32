@@ -64,7 +64,7 @@ Percent
 Twist
 Amount
 Cheat
--
+Plan
 -
 -
 -

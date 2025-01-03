@@ -82,5 +82,5 @@ Tone			Lens			Electric
 Texture			Sit				Come			
 Disk			Soap			Comma			
 Align			Spring			Art				
-Currency		Strike			
+Currency		Strike			Diet			
 Arc				Module			Contract		Issue			Consume			Program			English			

@@ -35,8 +35,8 @@
 	$alphabetCode = module\type\english\alphabet::code;
 
 	$fileName = isset($_REQUEST["f"]) ? $_REQUEST["f"] : "f.x";
-	$rowCount = isset($_REQUEST["f"]) ? $_REQUEST["r"] : 28;
-	$columnCount = isset($_REQUEST["f"]) ? $_REQUEST["c"] : 6;
+	$rowCount = isset($_REQUEST["f"]) ? (int)$_REQUEST["r"] : 28;
+	$columnCount = isset($_REQUEST["f"]) ? (int)$_REQUEST["c"] : 6;
 	$fileNameInitial = explode(".", $fileName)[0];
 	$fileNameExtension = explode(".", $fileName)[1];
 
@@ -206,10 +206,15 @@
 				echo '<span class="numericPosition">' . $column["numeric_position"] . "</span>" . '<span class="characterLength">' . $data[$column["text"]]["character_length"] . '</span>';
 				echo '<span tooltip="' . factorsOfNumber($data[$column["text"]]["check_key"]) . '"><span class="checkKey">' . $data[$column["text"]]["check_key"] . '</span></span>';
 			}
+			else if (($i === 1 || $i === $rowCount) && isset($column["text"]) && isset($data[$column["text"]]["check_key"])) {
+				echo "<br>";
+				echo '<span class="characterLength">' . $data[$column["text"]]["character_length"] . '</span>';
+				echo '<span tooltip="' . factorsOfNumber($data[$column["text"]]["check_key"]) . '"><span class="checkKey">' . $data[$column["text"]]["check_key"] . '</span></span>';
+			}
 			echo "</td>";
 		}
 		echo "</tr>";
-	}	
+	}
 	echo "</table>";
 ?>
 

@@ -74,7 +74,7 @@ Question
 True
 Often
 Interface
-Encyclopedia
+Encyclopaedia
 Enterprise
 Electric
 Come

@@ -70,17 +70,17 @@ Wrap			Rack			Plan
 Tray			Pen				Wire			
 Offer			Match			Empty			
 Chalk			Fuse			Compound		
-Loop			Lock			
-Supply			Comment			
-Stitch			Try				
-Probability		Alarm			
-Fashion			Jet				
-Lid				Body			
-Mix				Parallel		
-Micro			Part			
-Tone			Lens			
-Texture			Sit				
-Disk			Soap			
+Loop			Lock			Busy			
+Supply			Comment			Few				
+Stitch			Try				Question		
+Probability		Alarm			True			
+Fashion			Jet				Often			
+Lid				Body			Interface		
+Mix				Parallel		Encyclopedia	
+Micro			Part			Enterprise		
+Tone			Lens			Electric		
+Texture			Sit				Come			
+Disk			Soap			Comma			
 Align			Spring			
 Currency		Strike			
 Arc				Module			Contract		Issue			Consume			Program			English			

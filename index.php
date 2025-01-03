@@ -139,13 +139,19 @@
 	}
 	$socket[$rowCount][$columnCount + 1]["sum"] = $s;
 	$socket[$rowCount + 1][0]["text"] = "{_s}";
-	$s1 = 0;
-	foreach ($paragraph["value"] as $i => $row) {
+	$p = 1;
+	for ($i = 0; $i < $columnCount; $i++) {
 		$s = 0;
-		foreach ($row as $j => $column) {
-
+		for ($j = 0; $j < $rowCount - 2; $j++) {
+			$s += $data[$paragraph["value"][$j][$i]["text"]]["check_key"];
 		}
+		$socket[$rowCount + 1][$p++]["sum"] = $s;
 	}
+	$s = 0;
+	for ($i = 2; $i <= $rowCount - 1; $i++) {
+		$s += $socket[$i][$columnCount + 1]["sum"];
+	}
+	$socket[$rowCount + 1][$p]["sum"] = $s;
 	$socket[$rowCount + 2][0]["text"] = "{_t}";
 	$socket[$rowCount + 3][0]["text"] = "{_#}";
 
@@ -177,9 +183,9 @@
 		return $result;
 	}
 
-	//echo "<pre>";
-	//print_r($socket);
-	//echo "</pre>";
+	/*echo "<pre>";
+	print_r($socket);
+	echo "</pre>";*/
 ?>
 
 <?php
@@ -192,7 +198,8 @@
 				echo '<span class="key">' . $column["text"] . '</span>';
 			}
 			if (array_key_exists("sum", $column)) {
-				echo '<span tooltip="' . factorsOfNumber($column["sum"]) . '" flow="left">{' . $column["sum"] . '}';
+				$f = $j > $columnCount ? "left" : "up"; 
+				echo '<span tooltip="' . factorsOfNumber($column["sum"]) . '" flow="' . $f . '">{' . $column["sum"] . '}';
 			}
 			if (array_key_exists("numeric_position", $column)) {
 				echo "<br>";
@@ -207,6 +214,5 @@
 ?>
 
 <?php
-	echo $webpage->time();
 	echo $webpage->foot();
 ?>

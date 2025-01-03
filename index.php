@@ -153,6 +153,10 @@
 	}
 	$socket[$rowCount + 1][$p]["sum"] = $s;
 	$socket[$rowCount + 2][0]["text"] = "{_t}";
+	for ($i = 1; $i <= $columnCount; $i++) {
+		$socket[$rowCount + 2][$i]["sum"] = $socket[$rowCount + 1][$i]["sum"] + $data[$paragraph["top"][$i - 1]["text"]]["check_key"];
+	}
+	$socket[$rowCount + 2][$columnCount + 1]["sum"] = $socket[$rowCount + 1][$columnCount + 1]["sum"] + $socket[1][$columnCount + 1]["sum"];
 	$socket[$rowCount + 3][0]["text"] = "{_#}";
 
 	/**/

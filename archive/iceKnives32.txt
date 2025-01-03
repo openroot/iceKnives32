@@ -67,7 +67,7 @@ Exist			Clone			Twist
 Basket			Query			Amount			
 Catch			Formula			Cheat			
 Wrap			Rack			Plan			
-Tray			Pen				
+Tray			Pen				Wire			
 Offer			Match			
 Chalk			Fuse			
 Loop			Lock			

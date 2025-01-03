@@ -158,6 +158,10 @@
 	}
 	$socket[$rowCount + 2][$columnCount + 1]["sum"] = $socket[$rowCount + 1][$columnCount + 1]["sum"] + $socket[1][$columnCount + 1]["sum"];
 	$socket[$rowCount + 3][0]["text"] = "{_#}";
+	for ($i = 1; $i <= $columnCount; $i++) {
+		$socket[$rowCount + 3][$i]["sum"] = $data[$socket[1][$i]["text"]]["check_key"] + $data[$socket[$rowCount][$i]["text"]]["check_key"];
+	}
+	$socket[$rowCount + 3][$columnCount + 1]["sum"] = $socket[1][$columnCount + 1]["sum"] + $socket[$rowCount][$columnCount + 1]["sum"];
 
 	/**/
 	function factorsOfNumber(int $number): string {

@@ -25,4 +25,4 @@ argument		range			function
 format			pointer			port
 current			read			buffer
 mat				check			bracket
-associative		
+associative		classic			primitive

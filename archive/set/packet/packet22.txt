@@ -6,10 +6,10 @@ _one			reference		form			scalar
 04				update			
 05				add				data			
 06				find			
-07				delete			
-08				chunk			
-09				part			
-10				sort			
+07				delete			clause			demon			
+08				chunk			space			branch			
+09				part			bank			grade			
+10				sort			logic			slip			
 11				reset			envelop			medium			
 12				modified		instruction		thread			
 13				truncate		route			ring			

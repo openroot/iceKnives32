@@ -1,31 +1,31 @@
-_range			01				02				03				
+_range			_1				_2				_3				
 _one			reference		form			scalar			
-01				get				source			
-02				first			key				
-03				last			meta			
-04				update			
-05				add				data			
-06				find			
-07				delete			clause			demon			
-08				chunk			space			branch			
-09				part			bank			grade			
-10				sort			logic			slip			
-11				reset			envelop			medium			
-12				modified		instruction		thread			
-13				truncate		route			ring			
-14				history			store			script			
-15				tag				view			type			
-16				zip				security		stream			
-17				group			channel			address			
-18				order			insurance		reminder		
-19				session			version			derivative		
-20				information		signature		volume			
-21				track			serial			task			
-22				unique			use				series			
-23				argument		range			function		
-24				format			pointer			port			
-25				current			read			buffer			
-26				mat				check			bracket			
+_1				get				source			card			
+_2				first			key				model			
+_3				last			meta			
+_4				update							stamp			
+_5				add				data			structure		
+_6				find			piece			control			
+_7				delete			clause			demon			
+_8				chunk			space			branch			
+_9				part			bank			grade			
+_10				sort			logic			slip			
+_11				reset			envelop			medium			
+_12				modified		instruction		thread			
+_13				truncate		route			ring			
+_14				history			store			script			
+_15				tag				view			type			
+_16				zip				security		stream			
+_17				group			channel			address			
+_18				order			insurance		reminder		
+_19				session			version			derivative		
+_20				information		signature		volume			
+_21				track			serial			task			
+_22				unique			use				series			
+_23				argument		range			function		
+_24				format			pointer			port			
+_25				current			read			buffer			
+_26				mat				check			bracket			
 _@				associative		classic			primitive		
 /?1/4/2025 16:05:50;1/4/2025 16:06:15;1/4/2025 16:06:28;
 [library/memory/unit];{library/memory/unit/associative};(library/memory/unit/classic);<library/memory/unit/primitive>;

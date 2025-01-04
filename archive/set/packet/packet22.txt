@@ -11,7 +11,7 @@ part
 sort			
 reset			
 modified		
-truncate		
+truncate		route			ring
 history			store			script
 tag				view			type
 zip				security		stream

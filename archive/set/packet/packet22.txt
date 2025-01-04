@@ -1,31 +1,36 @@
-_range			_1				_2				_3				
-_one			reference		form			scalar			
-_1				get				source			card			
-_2				first			key				model			
-_3				last			meta			graphs			
-_4				update			difference		stamp			
-_5				add				data			structure		
-_6				find			piece			control			
-_7				delete			clause			demon			
-_8				chunk			space			branch			
-_9				part			bank			grade			
-_10				sort			logic			slip			
-_11				reset			envelop			medium			
-_12				modified		instruction		thread			
-_13				truncate		route			ring			
-_14				history			store			script			
-_15				tag				view			type			
-_16				zip				security		stream			
-_17				group			channel			address			
-_18				order			insurance		reminder		
-_19				session			version			derivative		
-_20				information		signature		volume			
-_21				track			serial			task			
-_22				unique			use				series			
-_23				argument		range			function		
-_24				format			pointer			port			
-_25				current			read			buffer			
-_26				mat				check			bracket			
-_@				associative		classic			primitive		
-/?1/4/2025 16:05:50;1/4/2025 16:06:15;1/4/2025 16:06:28;
-[library/memory/unit];{library/memory/unit/associative};(library/memory/unit/classic);<library/memory/unit/primitive>;
+_range			_1				_2				_3				'_s'			
+_one			reference		form			scalar			'77'			
+_1				get				source			card			'47'			
+_2				first			key				model			'57'			
+_3				last			meta			graphs			'56'			
+_4				update			difference		stamp			'80'			
+_5				add				data			structure		'56'			
+_6				find			piece			control			'65'			
+_7				delete			clause			demon			'69'			
+_8				chunk			space			branch			'62'			
+_9				part			bank			grade			'46'			
+_10				sort			logic			slip			'58'			
+_11				reset			envelop			medium			'72'			
+_12				modified		instruction		thread			'94'			
+_13				truncate		route			ring			'64'			
+_14				history			store			script			'73'			
+_15				tag				view			type			'41'			
+_16				zip				security		stream			'69'			
+_17				group			channel			address			'78'			
+_18				order			insurance		reminder		'85'			
+_19				session			version			derivative		'87'			
+_20				information		signature		volume			'107'			
+_21				track			serial			task			'59'			
+_22				unique			use				series			'61'			
+_23				argument		range			function		'83'			
+_24				format			pointer			port			'70'			
+_25				current			read			buffer			'64'			
+_26				mat				check			bracket			'52'			
+_@				associative		classic			primitive		'98'			
+[_s]			{555}			(603)			<597>			'1755'			
+[_t]			{588}			(622)			<622>			'1832'			
+[*1]			{280}			(313)			<310>			'903'			
+[*2]			{346}			(338)			<343>			'1027'			
+[_#]			{71}			(48)			<56>			'175'			
+[/?];{1/4/2025 16:05:50};(1/4/2025 16:06:15);<1/4/2025 16:06:28>;'0';
+[internet/website/php/namespace/library/memory/unit/];{associative/};(classic/);<primitive/>;'275';

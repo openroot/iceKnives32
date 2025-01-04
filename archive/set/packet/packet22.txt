@@ -2,8 +2,8 @@ _range			_1				_2				_3
 _one			reference		form			scalar			
 _1				get				source			card			
 _2				first			key				model			
-_3				last			meta			
-_4				update							stamp			
+_3				last			meta			graphs			
+_4				update			difference		stamp			
 _5				add				data			structure		
 _6				find			piece			control			
 _7				delete			clause			demon			

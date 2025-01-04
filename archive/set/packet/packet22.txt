@@ -10,8 +10,8 @@ _one			reference		form			scalar
 08				chunk			
 09				part			
 10				sort			
-11				reset			
-12				modified		
+11				reset			envelop			medium			
+12				modified		instruction		thread			
 13				truncate		route			ring			
 14				history			store			script			
 15				tag				view			type			

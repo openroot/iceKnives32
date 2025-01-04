@@ -17,7 +17,7 @@ tag				view			type
 zip				
 group			
 order			insurance		
-session			version			
+session			version			derivative
 information		signature		volume
 track			serial			task
 unique			use				series

@@ -35,13 +35,14 @@
 	$alphabetCode = module\type\english\alphabet::code;
 
 	$fileName = isset($_REQUEST["f"]) ? $_REQUEST["f"] : "f.x";
+	$fileAddress = isset($_REQUEST["a"]) ? $_REQUEST["a"] : "chain";
 	$rowCount = isset($_REQUEST["f"]) ? (int)$_REQUEST["r"] : 28;
 	$columnCount = isset($_REQUEST["f"]) ? (int)$_REQUEST["c"] : 6;
 	$fileNameInitial = explode(".", $fileName)[0];
 	$fileNameExtension = explode(".", $fileName)[1];
 
 	/* 1. Raw */
-	$raw = file("set/chain/" . $fileName . "/" . $fileName);
+	$raw = file("set/" . $fileAddress . "/" . $fileName . "/" . $fileName);
 
 	/* 2. Filter */
 	$filter = [];

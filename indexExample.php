@@ -2,15 +2,15 @@
 	require_once("internet/website/php/application/segment.php");
 	require_once("internet/website/php/library/memory/packet/associative/range.php");
 
-	use application\segment as applicationSegment;
+	use internet\website\php\application\segment as applicationSegment;
 ?>
 
 <?php
 	$webpage = new applicationSegment\webpage(
-		"iceKnives32",
+		"A website made with PHP",
 		"utf-8",
 		['name="viewport" content="width=device-width, initial-scale=1"'],
-		["internet/website/css/iceKnives32/style.css"],
+		["internet/website/css/style.css"],
 		[],
 		"Asia/Kolkata"
 	);

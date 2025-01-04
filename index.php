@@ -1,5 +1,5 @@
 <?php
-	require_once("internet/website/php/namespace/module/type/english/alphabet.php");
+	require_once("internet/website/php/namespace/module/packet/range/one/scalar/type/english/alphabet.php");
 	require_once("internet/website/php/namespace/environment/configuration.php");
 	require_once("internet/website/php/namespace/application/segment.php");
 
@@ -32,17 +32,17 @@
 
 <?php
 	/* x. Context */
-	$alphabetCode = module\type\english\alphabet::code;
+	$alphabetCode = module\packet\range\one\scalar\type\english\alphabet::code;
 
-	$fileName = isset($_REQUEST["f"]) ? $_REQUEST["f"] : "f.x";
-	$fileAddress = isset($_REQUEST["a"]) ? $_REQUEST["a"] : "chain";
-	$rowCount = isset($_REQUEST["f"]) ? (int)$_REQUEST["r"] : 28;
-	$columnCount = isset($_REQUEST["f"]) ? (int)$_REQUEST["c"] : 6;
-	$fileNameInitial = explode(".", $fileName)[0];
-	$fileNameExtension = explode(".", $fileName)[1];
+	$nameFile = isset($_REQUEST["n"]) ? $_REQUEST["n"] : "f";
+	$versionFile = isset($_REQUEST["v"]) ? $_REQUEST["v"] : "x";
+	$baseFile = isset($_REQUEST["b"]) ? $_REQUEST["b"] : "chain";
+	$rowCount = isset($_REQUEST["r"]) ? (int)$_REQUEST["r"] : 28;
+	$columnCount = isset($_REQUEST["c"]) ? (int)$_REQUEST["c"] : 6;
 
 	/* 1. Raw */
-	$raw = file("set/" . $fileAddress . "/" . $fileName . "/" . $fileName);
+
+	$raw = file("set/" . $baseFile . "/" . $nameFile . "/" . $versionFile . "/" . $nameFile);
 
 	/* 2. Filter */
 	$filter = [];
@@ -111,12 +111,12 @@
 
 	/* 7. Socket */
 	$socket = [];
-	$socket[0][0]["text"] = "{_" . $fileNameInitial . "}";
+	$socket[0][0]["text"] = "{_" . $nameFile . "}";
 	for ($i = 1; $i <= $columnCount; $i++) {
 		$socket[0][$i]["text"] = "{" . $i . "}";
 	}
 	$socket[0][$columnCount + 1]["text"] = "{" . "_s" . "}";
-	$socket[1][0]["text"] = "{_" . $fileNameExtension . "}";
+	$socket[1][0]["text"] = "{_" . $versionFile . "}";
 	$socket[1] = array_merge($socket[1], $paragraph["top"]);
 	$s = 0;
 	foreach ($paragraph["top"] as $v) {

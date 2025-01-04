@@ -8,9 +8,9 @@
 
 <?php
 	$webpageConfiguration = null;
-	$environmentConfiguration = new environment\configuration\data();
-	if (isset($environmentConfiguration) && isset($environmentConfiguration->value()["internet"]["website"]["php"]["namespace"]["application"]["segment"]["webpage"])) {
-		$webpageConfiguration = $environmentConfiguration->value()["internet"]["website"]["php"]["namespace"]["application"]["segment"]["webpage"];
+	$configurationConfiguration = new internet\website\php\environment\configuration\configuration();
+	if (isset($configurationConfiguration) && isset($configurationConfiguration->value()["internet"]["website"]["php"]["application"]["segment"]["webpage"])) {
+		$webpageConfiguration = $configurationConfiguration->value()["internet"]["website"]["php"]["application"]["segment"]["webpage"];
 	}
 	if (!keysExistsInArray($webpageConfiguration, ["title", "charset", "meta", "css", "js", "timeZone"])) {
 		$webpageConfiguration = null;
@@ -26,13 +26,13 @@
 		];
 	}
 	
-	$webpage = new application\segment\webpage($webpageConfiguration["title"], $webpageConfiguration["charset"], $webpageConfiguration["meta"], $webpageConfiguration["css"], $webpageConfiguration["js"], $webpageConfiguration["timeZone"]);
+	$webpage = new internet\website\php\application\segment\webpage($webpageConfiguration["title"], $webpageConfiguration["charset"], $webpageConfiguration["meta"], $webpageConfiguration["css"], $webpageConfiguration["js"], $webpageConfiguration["timeZone"]);
 	echo $webpage->head();
 ?>
 
 <?php
 	/* x. Context */
-	$alphabetCode = module\packet\range\one\scalar\type\english\alphabet::code;
+	$alphabetCode = internet\website\php\module\packet\range\one\scalar\type\english\alphabet::code;
 
 	$nameFile = isset($_REQUEST["n"]) ? $_REQUEST["n"] : "f";
 	$versionFile = isset($_REQUEST["v"]) ? $_REQUEST["v"] : "x";

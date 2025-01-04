@@ -2,17 +2,15 @@
 	"internet": {
 		"website": {
 			"php": {
-				"namespace": {
-					"application": {
-						"segment": {
-							"webpage": {
-								"title": "A website made with PHP",
-								"charset": "utf-8",
-								"meta": ["name=\"viewport\" content=\"width=device-width, initial-scale=1\""],
-								"css": ["internet/website/css/style.css"],
-								"js": [],
-								"timeZone": "Asia/Kolkata"
-							}
+				"application": {
+					"segment": {
+						"webpage": {
+							"title": "A website made with PHP",
+							"charset": "utf-8",
+							"meta": ["name=\"viewport\" content=\"width=device-width, initial-scale=1\""],
+							"css": ["internet/website/css/style.css"],
+							"js": [],
+							"timeZone": "Asia/Kolkata"
 						}
 					}
 				}

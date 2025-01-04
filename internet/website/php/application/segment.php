@@ -1,5 +1,5 @@
 <?php
-	namespace application\segment;
+	namespace internet\website\php\application\segment;
 ?>
 
 <?php

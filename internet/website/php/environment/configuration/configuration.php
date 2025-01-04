@@ -1,14 +1,14 @@
 <?php
-	namespace environment\configuration;
+	namespace internet\website\php\environment\configuration;
 ?>
 
 <?php
-	class data {
+	class configuration {
 		private string $filePath;
 		private ?array $value;
 
 		function __construct(?string $filePath = null) {
-			$this->filePath = isset($filePath) ? $filePath : "internet/website/php/environment/configuration/iceKnives32.json";
+			$this->filePath = isset($filePath) ? $filePath : "internet/website/php/environment/configuration/iceKnives32/iceKnives32.json";
 			if (file_exists($this->filePath)) {
 				$j = file_get_contents($this->filePath);
 				if (isset($j)) {

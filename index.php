@@ -1,7 +1,7 @@
 <?php
-	require_once("internet/website/php/namespace/module/packet/range/one/scalar/type/english/alphabet.php");
-	require_once("internet/website/php/namespace/environment/configuration.php");
-	require_once("internet/website/php/namespace/application/segment.php");
+	require_once("internet/website/php/module/packet/range/one/scalar/type/english/alphabet.php");
+	require_once("internet/website/php/environment/configuration/configuration.php");
+	require_once("internet/website/php/application/segment.php");
 
 	//use application\segment as applicationSegment;
 ?>

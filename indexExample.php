@@ -1,6 +1,6 @@
 <?php
-	require_once("internet/website/php/namespace/application/segment.php");
-	require_once("internet/website/php/namespace/library/memory/unit/associative/range.php");
+	require_once("internet/website/php/application/segment.php");
+	require_once("internet/website/php/library/memory/packet/associative/range.php");
 
 	use application\segment as applicationSegment;
 ?>
@@ -26,8 +26,8 @@
 	echo "<ul>";
 
 	echo "<li>";
-	echo "[class] library\memory\unit\associative\\range()<br>";
-	$t = new library\memory\unit\associative\range([25, "foo", "bar", null, "set", true, 1.7]);
+	echo "[class] library\memory\packet\associative\\range()<br>";
+	$t = new internet\website\php\library\memory\packet\associative\range([25, "foo", "bar", null, "set", true, 1.7]);
 	echo "<br>[property] source: "; print_r($t->source);
 	echo "<br>[property] count: " . $t->count;
 	echo "<br>[function] first(): " . $t->first();
@@ -39,7 +39,7 @@
 	echo "<br>[property] source: "; print_r($t->source);
 	echo "<br>[property] count: " . $t->count;
 	echo "<br>";
-	$t = new library\memory\unit\associative\range(["foo" => ["lorem", "ipsum"], "bar"]);
+	$t = new internet\website\php\library\memory\packet\associative\range(["foo" => ["lorem", "ipsum"], "bar"]);
 	echo "<br>[property] source: "; print_r($t->source);
 	echo "<br>[property] count: " . $t->count;
 	echo "</li>";

@@ -1,5 +1,5 @@
 <?php
-	namespace library\memory\unit\associative;
+	namespace internet\website\php\library\memory\packet\associative;
 ?>
 
 <?php

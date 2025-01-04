@@ -1,5 +1,5 @@
 <?php
-	namespace module\packet\range\one\scalar\type\english;
+	namespace internet\website\php\module\packet\range\one\scalar\type\english;
 ?>
 
 <?php

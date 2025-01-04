@@ -1,28 +1,31 @@
-reference		
-get				source			
-first			key				
-last			meta			
-update			
-add				data			
-find			
-delete			
-chunk			
-part			
-sort			
-reset			
-modified		
-truncate		route			ring
-history			store			script
-tag				view			type
-zip				security		stream
-group			channel			address
-order			insurance		reminder
-session			version			derivative
-information		signature		volume
-track			serial			task
-unique			use				series
-argument		range			function
-format			pointer			port
-current			read			buffer
-mat				check			bracket
-associative		classic			primitive
+_range
+_one			reference		form			scalar
+				get				source			
+				first			key				
+				last			meta			
+				update			
+				add				data			
+				find			
+				delete			
+				chunk			
+				part			
+				sort			
+				reset			
+				modified		
+				truncate		route			ring
+				history			store			script
+				tag				view			type
+				zip				security		stream
+				group			channel			address
+				order			insurance		reminder
+				session			version			derivative
+				information		signature		volume
+				track			serial			task
+				unique			use				series
+				argument		range			function
+				format			pointer			port
+				current			read			buffer
+				mat				check			bracket
+_@				associative		classic			primitive
+/?1/4/2025 16:05:50;1/4/2025 16:06:15;1/4/2025 16:06:28;
+[library/memory/unit];{library/memory/unit/associative};(library/memory/unit/classic);<library/memory/unit/primitive>;

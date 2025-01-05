@@ -2,11 +2,10 @@
 	require_once("internet/website/php/module/packet/range/one/scalar/type/english/alphabet.php");
 	require_once("internet/website/php/environment/configuration/configuration.php");
 	require_once("internet/website/php/application/segment.php");
-
-	//use application\segment as applicationSegment;
 ?>
 
 <?php
+	// x. Context
 	$webpageConfiguration = null;
 	$configurationConfiguration = new internet\website\php\environment\configuration\configuration();
 	if (isset($configurationConfiguration) && isset($configurationConfiguration->value()["internet"]["website"]["php"]["application"]["segment"]["webpage"])) {
@@ -25,146 +24,204 @@
 			"timeZone" => "Asia/Kolkata"
 		];
 	}
-	
 	$webpage = new internet\website\php\application\segment\webpage($webpageConfiguration["title"], $webpageConfiguration["charset"], $webpageConfiguration["meta"], $webpageConfiguration["css"], $webpageConfiguration["js"], $webpageConfiguration["timeZone"]);
-	echo $webpage->head();
-?>
-
-<?php
-	/* x. Context */
-	$alphabetCode = internet\website\php\module\packet\range\one\scalar\type\english\alphabet::code;
-
+	$assert = isset($_REQUEST["a"]) ? $_REQUEST["a"] : "home";
 	$nameFile = isset($_REQUEST["n"]) ? $_REQUEST["n"] : "f";
 	$versionFile = isset($_REQUEST["v"]) ? $_REQUEST["v"] : "x";
 	$baseFile = isset($_REQUEST["b"]) ? $_REQUEST["b"] : "chain";
 	$rowCount = isset($_REQUEST["r"]) ? (int)$_REQUEST["r"] : 28;
 	$columnCount = isset($_REQUEST["c"]) ? (int)$_REQUEST["c"] : 6;
+	$alphabetCode = internet\website\php\module\packet\range\one\scalar\type\english\alphabet::code;
 
-	/* 1. Raw */
+	echo $webpage->head();
+?>
 
-	$raw = file("set/" . $baseFile . "/" . $nameFile . "/" . $versionFile . "/" . $nameFile);
+<?php
+	if ($assert === "home") {
+		echo	'<h2>set/chain</h2>
+				<p><a href="/?&a=set&b=chain&n=f&v=x&r=28&c=6&">f.x</a></p>
+				<p><a href="/?&a=set&b=chain&n=i&v=c&r=28&c=7&">i.c</a></p>
+				<p><a href="/?&a=set&b=chain&n=p&v=i&r=28&c=26&">p.i</a></p>
 
-	/* 2. Filter */
-	$filter = [];
-	$i = 0;
-	foreach ($raw as $key) {
-		$filter[$i++] = trim($key);
+				<h2>set/packet</h2>
+				<p><a href="/?&a=set&b=packet&n=range&v=one&r=28&c=3&">range.one</a></p>
+
+				<h2>set/blueprint</h2>
+				<p><a href="/?&a=set&b=blueprint&n=recycle&v=it&r=28&c=2&">recycle.it</a></p>
+
+				<h2>set/iceKnives32</h2>
+				<p><a href="/indexExample.php">Hello World!</a></p>';
 	}
+?>
 
-	/* 3. Data */
-	$data = [];
-	foreach ($filter as $key) {
-		$noncharacterCount = 0;
-		$checkKey = 0;
-		$characters = str_split($key);
-		foreach ($characters as $character) {
-			if (!array_key_exists($character, $alphabetCode)) {
-				$noncharacterCount++;
+<?php
+	if ($assert === "set") {
+		// 1. Raw
+
+		$raw = file("set/" . $baseFile . "/" . $nameFile . "/" . $versionFile . "/" . $nameFile);
+
+		// 2. Filter
+		$filter = [];
+		$i = 0;
+		foreach ($raw as $key) {
+			$filter[$i++] = trim($key);
+		}
+
+		// 3. Data
+		$data = [];
+		foreach ($filter as $key) {
+			$noncharacterCount = 0;
+			$checkKey = 0;
+			$characters = str_split($key);
+			foreach ($characters as $character) {
+				if (!array_key_exists($character, $alphabetCode)) {
+					$noncharacterCount++;
+				}
+				else {
+					$checkKey += $alphabetCode[$character];
+				}
+			}
+			$data[$key] = [
+				"character_length" => strlen($key),
+				"noncharacter_count" => $noncharacterCount,
+				"check_key" => $checkKey
+			];
+		}
+
+		// 4. Grid
+		$grid = [];
+		for ($i = 0; $i < $rowCount; $i++) {
+			for ($j = 0; $j < $columnCount; $j++) {
+				$grid[$i][$j] = $filter[($j * $rowCount) + $i];
+			}
+		}
+
+		// 5. Information
+		$information = [];
+		$information["top"] = $grid[0];
+		$information["bottom"] = $grid[$rowCount - 1];
+		$information["value"] = array_slice($grid, 1, $rowCount - 2);
+
+		// 6. Paragraph
+		$t = count($information["value"]);
+		$paragraph = [];
+		foreach ($information as $k => $set) {
+			if ($k === "value") {
+				foreach ($information["value"] as $i => $row) {
+					foreach ($row as $j => $column) {
+						$paragraph[$k][$i][$j] = [
+							"text" => $information["value"][$i][$j],
+							"numeric_position" => ($j * $t) + $i + 1
+						];
+					}
+				}
 			}
 			else {
-				$checkKey += $alphabetCode[$character];
-			}
-		}
-		$data[$key] = [
-			"character_length" => strlen($key),
-			"noncharacter_count" => $noncharacterCount,
-			"check_key" => $checkKey
-		];
-	}
-
-	/* 4. Grid */
-	$grid = [];
-	for ($i = 0; $i < $rowCount; $i++) {
-		for ($j = 0; $j < $columnCount; $j++) {
-			$grid[$i][$j] = $filter[($j * $rowCount) + $i];
-		}
-	}
-
-	/* 5. Information */
-	$information = [];
-	$information["top"] = $grid[0];
-	$information["bottom"] = $grid[$rowCount - 1];
-	$information["value"] = array_slice($grid, 1, $rowCount - 2);
-
-	/* 6. Paragraph */
-	$t = count($information["value"]);
-	$paragraph = [];
-	foreach ($information as $k => $set) {
-		if ($k === "value") {
-			foreach ($information["value"] as $i => $row) {
-				foreach ($row as $j => $column) {
-					$paragraph[$k][$i][$j] = [
-						"text" => $information["value"][$i][$j],
-						"numeric_position" => ($j * $t) + $i + 1
+				foreach ($set as $i => $v) {
+					$paragraph[$k][$i] = [
+						"text" => $information[$k][$i]
 					];
 				}
 			}
 		}
-		else {
-			foreach ($set as $i => $v) {
-				$paragraph[$k][$i] = [
-					"text" => $information[$k][$i]
-				];
-			}
-		}
-	}
 
-	/* 7. Socket */
-	$socket = [];
-	$socket[0][0]["text"] = "{_" . $nameFile . "}";
-	for ($i = 1; $i <= $columnCount; $i++) {
-		$socket[0][$i]["text"] = "{" . $i . "}";
-	}
-	$socket[0][$columnCount + 1]["text"] = "{" . "_s" . "}";
-	$socket[1][0]["text"] = "{_" . $versionFile . "}";
-	$socket[1] = array_merge($socket[1], $paragraph["top"]);
-	$s = 0;
-	foreach ($paragraph["top"] as $v) {
-		$s += $data[$v["text"]]["check_key"];
-	}
-	$socket[1][$columnCount + 1]["sum"] = $s;
-	for ($i = 1; $i < $rowCount - 1; $i++) {
-		$socket[$i + 1][0]["text"] = "{" . $i . "}";
-		$socket[$i + 1] = array_merge($socket[$i + 1], $paragraph["value"][$i - 1]);
+		// 7. Socket
+		$socket = [];
+		$socket[0][0]["text"] = "{_" . $nameFile . "}";
+		for ($i = 1; $i <= $columnCount; $i++) {
+			$socket[0][$i]["text"] = "{" . $i . "}";
+		}
+		$socket[0][$columnCount + 1]["text"] = "{" . "_s" . "}";
+		$socket[1][0]["text"] = "{_" . $versionFile . "}";
+		$socket[1] = array_merge($socket[1], $paragraph["top"]);
 		$s = 0;
-		foreach ($paragraph["value"][$i - 1] as $v) {
+		foreach ($paragraph["top"] as $v) {
 			$s += $data[$v["text"]]["check_key"];
 		}
-		$socket[$i + 1][$columnCount + 1]["sum"] = $s;
-	}
-	$socket[$rowCount][0]["text"] = "{" . "_@" . "}";
-	$socket[$rowCount] = array_merge($socket[$rowCount], $paragraph["bottom"]);
-	$s = 0;
-	foreach ($paragraph["bottom"] as $v) {
-		$s += $data[$v["text"]]["check_key"];
-	}
-	$socket[$rowCount][$columnCount + 1]["sum"] = $s;
-	$socket[$rowCount + 1][0]["text"] = "{_s}";
-	$p = 1;
-	for ($i = 0; $i < $columnCount; $i++) {
-		$s = 0;
-		for ($j = 0; $j < $rowCount - 2; $j++) {
-			$s += $data[$paragraph["value"][$j][$i]["text"]]["check_key"];
+		$socket[1][$columnCount + 1]["sum"] = $s;
+		for ($i = 1; $i < $rowCount - 1; $i++) {
+			$socket[$i + 1][0]["text"] = "{" . $i . "}";
+			$socket[$i + 1] = array_merge($socket[$i + 1], $paragraph["value"][$i - 1]);
+			$s = 0;
+			foreach ($paragraph["value"][$i - 1] as $v) {
+				$s += $data[$v["text"]]["check_key"];
+			}
+			$socket[$i + 1][$columnCount + 1]["sum"] = $s;
 		}
-		$socket[$rowCount + 1][$p++]["sum"] = $s;
-	}
-	$s = 0;
-	for ($i = 2; $i <= $rowCount - 1; $i++) {
-		$s += $socket[$i][$columnCount + 1]["sum"];
-	}
-	$socket[$rowCount + 1][$p]["sum"] = $s;
-	$socket[$rowCount + 2][0]["text"] = "{_t}";
-	for ($i = 1; $i <= $columnCount; $i++) {
-		$socket[$rowCount + 2][$i]["sum"] = $socket[$rowCount + 1][$i]["sum"] + $data[$paragraph["top"][$i - 1]["text"]]["check_key"];
-	}
-	$socket[$rowCount + 2][$columnCount + 1]["sum"] = $socket[$rowCount + 1][$columnCount + 1]["sum"] + $socket[1][$columnCount + 1]["sum"];
-	$socket[$rowCount + 3][0]["text"] = "{_#}";
-	for ($i = 1; $i <= $columnCount; $i++) {
-		$socket[$rowCount + 3][$i]["sum"] = $data[$socket[1][$i]["text"]]["check_key"] + $data[$socket[$rowCount][$i]["text"]]["check_key"];
-	}
-	$socket[$rowCount + 3][$columnCount + 1]["sum"] = $socket[1][$columnCount + 1]["sum"] + $socket[$rowCount][$columnCount + 1]["sum"];
+		$socket[$rowCount][0]["text"] = "{" . "_@" . "}";
+		$socket[$rowCount] = array_merge($socket[$rowCount], $paragraph["bottom"]);
+		$s = 0;
+		foreach ($paragraph["bottom"] as $v) {
+			$s += $data[$v["text"]]["check_key"];
+		}
+		$socket[$rowCount][$columnCount + 1]["sum"] = $s;
+		$socket[$rowCount + 1][0]["text"] = "{_s}";
+		$p = 1;
+		for ($i = 0; $i < $columnCount; $i++) {
+			$s = 0;
+			for ($j = 0; $j < $rowCount - 2; $j++) {
+				$s += $data[$paragraph["value"][$j][$i]["text"]]["check_key"];
+			}
+			$socket[$rowCount + 1][$p++]["sum"] = $s;
+		}
+		$s = 0;
+		for ($i = 2; $i <= $rowCount - 1; $i++) {
+			$s += $socket[$i][$columnCount + 1]["sum"];
+		}
+		$socket[$rowCount + 1][$p]["sum"] = $s;
+		$socket[$rowCount + 2][0]["text"] = "{_t}";
+		for ($i = 1; $i <= $columnCount; $i++) {
+			$socket[$rowCount + 2][$i]["sum"] = $socket[$rowCount + 1][$i]["sum"] + $data[$paragraph["top"][$i - 1]["text"]]["check_key"];
+		}
+		$socket[$rowCount + 2][$columnCount + 1]["sum"] = $socket[$rowCount + 1][$columnCount + 1]["sum"] + $socket[1][$columnCount + 1]["sum"];
+		$socket[$rowCount + 3][0]["text"] = "{_#}";
+		for ($i = 1; $i <= $columnCount; $i++) {
+			$socket[$rowCount + 3][$i]["sum"] = $data[$socket[1][$i]["text"]]["check_key"] + $data[$socket[$rowCount][$i]["text"]]["check_key"];
+		}
+		$socket[$rowCount + 3][$columnCount + 1]["sum"] = $socket[1][$columnCount + 1]["sum"] + $socket[$rowCount][$columnCount + 1]["sum"];
 
-	/**/
+		//echo "<pre>";
+		//print_r($socket);
+		//echo "</pre>";
+?>
+
+<?php
+		echo "<table>";
+		foreach ($socket as $i => $row) {
+			echo "<tr>";
+			foreach ($row as $j => $column) {
+				echo "<td>";
+				if (array_key_exists("text", $column)) {
+					echo '<span class="key">' . $column["text"] . '</span>';
+				}
+				if (array_key_exists("sum", $column)) {
+					$f = $j > $columnCount ? "left" : "up"; 
+					echo '<span tooltip="' . factorsOfNumber($column["sum"]) . '" flow="' . $f . '">{' . $column["sum"] . '}';
+				}
+				if (array_key_exists("numeric_position", $column)) {
+					echo "<br>";
+					echo '<span class="numericPosition">' . $column["numeric_position"] . "</span>" . '<span class="characterLength">' . $data[$column["text"]]["character_length"] . '</span>';
+					echo '<span tooltip="' . factorsOfNumber($data[$column["text"]]["check_key"]) . '"><span class="checkKey">' . $data[$column["text"]]["check_key"] . '</span></span>';
+				}
+				else if (($i === 1 || $i === $rowCount) && isset($column["text"]) && isset($data[$column["text"]]["check_key"])) {
+					echo "<br>";
+					echo '<span class="characterLength">' . $data[$column["text"]]["character_length"] . '</span>';
+					echo '<span tooltip="' . factorsOfNumber($data[$column["text"]]["check_key"]) . '"><span class="checkKey">' . $data[$column["text"]]["check_key"] . '</span></span>';
+				}
+				echo "</td>";
+			}
+			echo "</tr>";
+		}
+		echo "</table>";
+	}
+?>
+
+<?php
+	echo $webpage->foot();
+?>
+
+<?php
+	/* TODO: Move to proper place. */
 	function factorsOfNumber(int $number): string {
 		$result = "";
 		if ($number > 0) {
@@ -191,42 +248,4 @@
 		}
 		return $result;
 	}
-
-	/*echo "<pre>";
-	print_r($socket);
-	echo "</pre>";*/
-?>
-
-<?php
-	echo "<table>";
-	foreach ($socket as $i => $row) {
-		echo "<tr>";
-		foreach ($row as $j => $column) {
-			echo "<td>";
-			if (array_key_exists("text", $column)) {
-				echo '<span class="key">' . $column["text"] . '</span>';
-			}
-			if (array_key_exists("sum", $column)) {
-				$f = $j > $columnCount ? "left" : "up"; 
-				echo '<span tooltip="' . factorsOfNumber($column["sum"]) . '" flow="' . $f . '">{' . $column["sum"] . '}';
-			}
-			if (array_key_exists("numeric_position", $column)) {
-				echo "<br>";
-				echo '<span class="numericPosition">' . $column["numeric_position"] . "</span>" . '<span class="characterLength">' . $data[$column["text"]]["character_length"] . '</span>';
-				echo '<span tooltip="' . factorsOfNumber($data[$column["text"]]["check_key"]) . '"><span class="checkKey">' . $data[$column["text"]]["check_key"] . '</span></span>';
-			}
-			else if (($i === 1 || $i === $rowCount) && isset($column["text"]) && isset($data[$column["text"]]["check_key"])) {
-				echo "<br>";
-				echo '<span class="characterLength">' . $data[$column["text"]]["character_length"] . '</span>';
-				echo '<span tooltip="' . factorsOfNumber($data[$column["text"]]["check_key"]) . '"><span class="checkKey">' . $data[$column["text"]]["check_key"] . '</span></span>';
-			}
-			echo "</td>";
-		}
-		echo "</tr>";
-	}
-	echo "</table>";
-?>
-
-<?php
-	echo $webpage->foot();
 ?>

@@ -1,5 +1,20 @@
+// set/default
 http://localhost:32/
+
+// set/chain
 http://localhost:32/?&b=chain&n=f&v=x&r=28&c=6&
 http://localhost:32/?&b=chain&n=i&v=c&r=28&c=7&
 http://localhost:32/?&b=chain&n=p&v=i&r=28&c=26&
+
+// set/packet
 http://localhost:32/?&b=packet&n=range&v=one&r=28&c=3&
+
+// set/blueprint
+http://localhost:32/?&b=blueprint&n=recycle&v=it&r=28&c=2&
+
+// set/iceKnives32
+http://localhost:32/indexExample.php
+
+// set/note
+1. "localhost" represents the website domain.
+2. "32" represents port number used in server at "localhost" domain.

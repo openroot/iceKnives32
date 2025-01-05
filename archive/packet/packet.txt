@@ -1,3 +1,40 @@
+_packet			_1				_2				_3				'_s'			
+_format			-				-				-				''				
+_1				associative		reference		-				''			
+_2				classic			form			-				''				
+_3				primitive		scalar			-				''				
+_4				example			vector			-				''				
+_5				-				-				-				''				
+_6				-				-				-				''				
+_7				-				-				-				''				
+_8				-				-				-				''				
+_9				-				-				-				''				
+_10				-				-				-				''				
+_11				-				-				-				''				
+_12				-				-				-				''				
+_13				-				-				-				''				
+_14				-				-				-				''				
+_15				-				-				-				''				
+_16				-				-				-				''				
+_17				-				-				-				''				
+_18				-				-				-				''				
+_19				-				-				-				''				
+_20				-				-				-				''				
+_21				-				-				-				''				
+_22				-				-				-				''				
+_23				-				-				-				''				
+_24				-				-				-				''				
+_25				-				-				-				''				
+_26				-				-				-				''				
+_@				-				-				-				''				
+[_s]			{}				()				<>				''				
+[_t]			{}				()				<>				''				
+[*1]			{}				()				<>				''				
+[*2]			{}				()				<>				''				
+[_#]			{}				()				<>				''				
+[/?];;;;;
+[internet/website/php/library/memory/packet/];{/};(/);</>;'';
+
 _range			_1				_2				_3				'_s'			
 _one			reference		form			scalar			'77'			
 _1				get				source			card			'47'			
@@ -37,37 +74,37 @@ _@				associative		classic			primitive		'98'
 
 _migrate		_1				_2				_3				'_s'			
 _node			reference		form			scalar			'77'			
-_1				robot			conversation	network			''
-_2				compass			optimisation	explain			''
-_3				service			synchronization	machine			''
-_4				item			formation		cell			''
-_5				assign			reservation		container		''
-_6				
-_7				
-_8				
-_9				
-_10				
-_11				
-_12				
-_13				
-_14				
-_15				
-_16				
-_17				
-_18				
-_19				
-_20				
-_21				
-_22				
-_23				
-_24				
-_25				
-_26				
+_1				robot			conversation	network			''				
+_2				compass			optimisation	explain			''				
+_3				service			synchronisation	machine			''				
+_4				item			formation		cell			''				
+_5				assign			reservation		container		''				
+_6				template		specimen		pattern			''				
+_7				-				-				-				''				
+_8				-				-				-				''				
+_9				-				-				-				''				
+_10				-				-				-				''				
+_11				-				-				-				''				
+_12				-				-				-				''				
+_13				-				-				-				''				
+_14				-				-				-				''				
+_15				-				-				-				''				
+_16				-				-				-				''				
+_17				-				-				-				''				
+_18				-				-				-				''				
+_19				-				-				-				''				
+_20				-				-				-				''				
+_21				-				-				-				''				
+_22				-				-				-				''				
+_23				-				-				-				''				
+_24				-				-				-				''				
+_25				-				-				-				''				
+_26				-				-				-				''				
 _@				associative		classic			primitive		'98'			
-[_s]			
-[_t]			
-[*1]			
-[*2]			
-[_#]			
-[/?];
+[_s]			{}				()				<>				''				
+[_t]			{}				()				<>				''				
+[*1]			{}				()				<>				''				
+[*2]			{}				()				<>				''				
+[_#]			{}				()				<>				''				
+[/?];;;;;
 [internet/website/php/library/memory/packet/];{associative/};(classic/);<primitive/>;'246';

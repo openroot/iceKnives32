@@ -8,6 +8,7 @@ http://localhost:32/?&a=set&b=chain&n=p&v=i&r=28&c=26&
 
 // set/packet
 http://localhost:32/?&a=set&b=packet&n=range&v=one&r=28&c=3&
+http://localhost:32/?&a=set&b=packet&n=migrate&v=node&r=28&c=4&
 
 // set/blueprint
 http://localhost:32/?&a=set&b=blueprint&n=recycle&v=it&r=28&c=2&

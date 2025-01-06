@@ -45,6 +45,7 @@
 
 				<h2>set/packet</h2>
 				<p><a href="/?&a=set&b=packet&n=range&v=one&r=28&c=3&">range.one</a></p>
+				<p><a href="/?&a=set&b=packet&n=migrate&v=node&r=28&c=4&">migrate.node</a></p>
 
 				<h2>set/blueprint</h2>
 				<p><a href="/?&a=set&b=blueprint&n=recycle&v=it&r=28&c=2&">recycle.it</a></p>

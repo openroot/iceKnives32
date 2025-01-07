@@ -1,21 +1,21 @@
-// set/initial
+// 0. set/initial
 http://localhost:32/
 
-// set/chain
-http://localhost:32/?&a=set&b=chain&n=f&v=x&r=28&c=6&
-http://localhost:32/?&a=set&b=chain&n=i&v=c&r=28&c=7&
-http://localhost:32/?&a=set&b=chain&n=p&v=i&r=28&c=26&
+// 1. set/packet
+http://localhost:32/?&a=set&b=packet&n=range&v=one&r=28&c=3
+http://localhost:32/?&a=set&b=packet&n=migrate&v=node&r=28&c=7
 
-// set/packet
-http://localhost:32/?&a=set&b=packet&n=range&v=one&r=28&c=3&
-http://localhost:32/?&a=set&b=packet&n=migrate&v=node&r=28&c=4&
+// 2. set/chain
+http://localhost:32/?&a=set&b=chain&n=f&v=x&r=28&c=6
+http://localhost:32/?&a=set&b=chain&n=i&v=c&r=28&c=7
+http://localhost:32/?&a=set&b=chain&n=p&v=i&r=28&c=26
 
-// set/blueprint
-http://localhost:32/?&a=set&b=blueprint&n=recycle&v=it&r=28&c=2&
-
-// set/iceKnives32
+// 25. set/iceKnives32
 http://localhost:32/indexExample.php
 
-// set/note
+// 26. set/blueprint
+http://localhost:32/?&a=set&b=blueprint&n=recycle&v=it&r=28&c=2
+
+// 0. set/note
 1. "localhost" represents the website domain.
 2. "32" represents port number used in server at "localhost" domain.

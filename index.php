@@ -38,20 +38,22 @@
 
 <?php
 	if ($assert === "home") {
-		echo	'<h2>set/chain</h2>
-				<p><a href="/?&a=set&b=chain&n=f&v=x&r=28&c=6&">f.x</a></p>
-				<p><a href="/?&a=set&b=chain&n=i&v=c&r=28&c=7&">i.c</a></p>
-				<p><a href="/?&a=set&b=chain&n=p&v=i&r=28&c=26&">p.i</a></p>
+		echo '
+				<h2>1. set/packet</h2>
+				<p><a href="/?&a=set&b=packet&n=range&v=one&r=28&c=3">1. range.one</a></p>
+				<p><a href="/?&a=set&b=packet&n=migrate&v=node&r=28&c=7">2. migrate.node</a></p>
 
-				<h2>set/packet</h2>
-				<p><a href="/?&a=set&b=packet&n=range&v=one&r=28&c=3&">range.one</a></p>
-				<p><a href="/?&a=set&b=packet&n=migrate&v=node&r=28&c=4&">migrate.node</a></p>
+				<h2>2. set/chain</h2>
+				<p><a href="/?&a=set&b=chain&n=f&v=x&r=28&c=6">1. f.x</a></p>
+				<p><a href="/?&a=set&b=chain&n=i&v=c&r=28&c=7">2. i.c</a></p>
+				<p><a href="/?&a=set&b=chain&n=p&v=i&r=28&c=26">3. p.i</a></p>
 
-				<h2>set/blueprint</h2>
-				<p><a href="/?&a=set&b=blueprint&n=recycle&v=it&r=28&c=2&">recycle.it</a></p>
+				<h2>25. set/iceKnives32</h2>
+				<p><a href="/indexExample.php">0. Hello World!</a></p>
 
-				<h2>set/iceKnives32</h2>
-				<p><a href="/indexExample.php">Hello World!</a></p>';
+				<h2>26. set/blueprint</h2>
+				<p><a href="/?&a=set&b=blueprint&n=recycle&v=it&r=28&c=2">3. recycle.it</a></p>
+		';
 	}
 ?>
 

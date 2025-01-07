@@ -203,3 +203,22 @@ tr:hover {
 	animation: tooltipHorizontal 300ms ease-out forwards;
 }
 /* End: tooltip */
+
+/* Start: a */
+a {
+	text-decoration: none;
+	color: var(--yellowDay);
+}
+a:link {
+	color: var(--yellowDay);
+}
+a:visited {
+	color: var(--yellowDay);
+}
+a:hover {
+	color: var(--yellowDark);
+}
+a:active {
+	color: var(--yellowDay);
+}
+/* End: a */

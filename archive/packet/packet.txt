@@ -25,7 +25,7 @@
 [23]			stock			-				-				''				
 [24]			chat			-				-				''				
 [25]			opera			-				-				''				
-[26]			command			-				-				''				
+[26]			command			screen			-				''				
 [@]				toss			deploy			marquee			''				
 [s]				{}				()				<>				''				
 [t]				{}				()				<>				''				

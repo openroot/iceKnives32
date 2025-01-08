@@ -40,6 +40,7 @@
 	if ($assert === "home") {
 		echo '
 				<h2>1. set/packet</h2>
+				<p><a href="/?&a=set&b=packet&n=format&v=&r=28&c=3">0. packet.format</a></p>
 				<p><a href="/?&a=set&b=packet&n=range&v=one&r=28&c=3">1. range.one</a></p>
 				<p><a href="/?&a=set&b=packet&n=migrate&v=node&r=28&c=7">2. migrate.node</a></p>
 
@@ -60,8 +61,8 @@
 <?php
 	if ($assert === "set") {
 		// 1. Raw
-
-		$raw = file("set/" . $baseFile . "/" . $nameFile . "/" . $versionFile . "/" . $nameFile);
+		$raw = !empty($versionFile) ? file($assert . "/" . $baseFile . "/" . $nameFile . "/" . $versionFile . "/" . $nameFile)
+				: file($assert . "/" . $baseFile . "/" . $nameFile . "/" . $baseFile);
 
 		// 2. Filter
 		$filter = [];

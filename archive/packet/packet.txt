@@ -24,7 +24,7 @@
 [22]			manage			-				-				''				
 [23]			stock			-				-				''				
 [24]			chat			-				-				''				
-[25]			opera			-				-				''				
+[25]			opera			team			-				''				
 [26]			command			screen			-				''				
 [@]				toss			deploy			marquee			''				
 [s]				{}				()				<>				''				

@@ -56,7 +56,7 @@
 [10]			sort			logic			slip			cost			gadget			thrown			side			'134'			
 [11]			reset			envelop			medium			concern			magic			stamp			tablet			'159'			
 [12]			modified		instruction		thread			bias			story			distract		rope			'174'			
-[13]			truncate		route			ring																			''				
+[13]			truncate		route			ring			acronym			carry			aim				engine			'148'			
 [14]			history			store			script																			''				
 [15]			tag				view			type																			''				
 [16]			zip				security		stream																			''				

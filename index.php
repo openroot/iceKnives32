@@ -41,7 +41,7 @@
 		echo '
 				<h2>1. set/packet</h2>
 				<p><a href="/?&a=set&b=packet&n=format&v=&r=28&c=3">0. packet.format</a></p>
-				<p><a href="/?&a=set&b=packet&n=range&v=one&r=28&c=3">1. range.one</a></p>
+				<p><a href="/?&a=set&b=packet&n=range&v=one&r=28&c=7">1. range.one</a></p>
 				<p><a href="/?&a=set&b=packet&n=migrate&v=node&r=28&c=7">2. migrate.node</a></p>
 
 				<h2>2. set/chain</h2>

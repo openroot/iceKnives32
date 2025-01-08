@@ -44,8 +44,8 @@
 
 [range]			{1}				(2)				<3>				|4|				_5_				"6"				!7!				's'				
 [one]			reference		form			scalar			vector			behaviour		club			consent			'97'			
-[1]				get				source			card			work			borrow			tense			coin			''				
-[2]				first			key				model																			''				
+[1]				get				source			card			work			borrow			tense			coin			'130'			
+[2]				first			key				model			gyro			grammar			test			layout			'145'			
 [3]				last			meta			graphs																			''				
 [4]				update			difference		stamp																			''				
 [5]				add				data			structure																		''				

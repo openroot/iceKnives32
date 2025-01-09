@@ -149,7 +149,7 @@ x:2>
 x:3>
 
 [memory]		{1}				(2)				<3>				|4|				_5_				"6"				!7!				's'				
-[neon]			reference		form			scalar			vector			behaviour		club			consent			'97'			
+[one]			reference		form			scalar			vector			behaviour		club			consent			'97'			
 [1]				show			permission		prototype		visit			agent			rent			analysis		'188'			
 [2]				bag				circumstance	mosaic			depict			craft			net				permanent		'162'			
 [3]				important		dynamic			relay			start			bin				spin			progress		'167'			

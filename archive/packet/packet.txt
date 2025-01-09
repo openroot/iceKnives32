@@ -167,7 +167,7 @@ x:3>
 [15]			grab			chronology		favourite		rank			scatter			noise			episode			'181'			
 [16]			flat			harmony			economy			case			energy			share			wrinkle			'173'			
 [17]			run				limited			caption			paper			deep			year			enormous		'155'			
-[18]			habitat																											''				
+[18]			habitat			only			topic			crack			polymer			firm			though			'157'			
 [19]			pact																											''				
 [20]			tie																												''				
 [21]			follow																											''				

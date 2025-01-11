@@ -84,24 +84,24 @@ dimension	more	surf	compare	split
 logarithm	screen	prior	rough	minus
 estimate	letter	top	brush	drop
 trade	supply	curve	load	stock
-command	gap	tank		
-page	tool	pen		
-search	loop	client		
-graph	toast	plain		
-combine	brand	raw		
-language	trust	status		
-light	clock	cable		
-probability	frame	touch		
-prompt	push	panel		
-choice	grill	option		
-count	utility	stack		
-code	coil	trip		
-file	gear	map		
-design	link	clue		
-column	gate	arc		
-caret	commerce	end		
-crop	mode	pipe		
-line	twin	band		
-since	wall	treat		
-particle	hit	layer		
-number	book	degree		
+command	gap	tank	pour	same
+page	tool	pen	fresh	pin
+search	loop	client	-	-
+graph	toast	plain	-	-
+combine	brand	raw	-	-
+language	trust	status	-	-
+light	clock	cable	-	-
+probability	frame	touch	-	-
+prompt	push	panel	-	-
+choice	grill	option	-	-
+count	utility	stack	-	-
+code	coil	trip	-	-
+file	gear	map	-	-
+design	link	clue	-	-
+column	gate	arc	-	-
+caret	commerce	end	-	-
+crop	mode	pipe	-	-
+line	twin	band	-	-
+since	wall	treat	-	-
+particle	hit	layer	-	-
+number	book	degree	-	-

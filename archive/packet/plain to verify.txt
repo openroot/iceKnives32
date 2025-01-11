@@ -78,3 +78,17 @@ prescribe	motor	fundamental	cut	minute	sequence	nomenclature
 subscribe	canvas	unit	per	rack	vent	numerous
 toll	rest	amplitude	every	tree	extract	dummy
 bill	create	pseudo	basic	hour	meter	contract
+
+style
+dimension
+logarithm
+estimate
+trade
+command
+page
+search
+graph
+combine
+language
+light
+probability

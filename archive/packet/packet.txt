@@ -192,7 +192,7 @@ x:4>
 
 [convert]		{1}				(2)				<3>				|4|				_5_				"6"				!7!				's'				
 [pull]			reference		form			scalar			vector			behaviour		club			consent			'97'			
-[1]				style			message			keep																			''				
+[1]				style			message			keep			paste			plus											''				
 [2]				dimension		more			surf																			''				
 [3]				logarithm		screen			prior																			''				
 [4]				estimate		letter			top																				''				

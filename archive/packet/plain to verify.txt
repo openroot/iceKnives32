@@ -79,31 +79,29 @@ subscribe	canvas	unit	per	rack	vent	numerous
 toll	rest	amplitude	every	tree	extract	dummy
 bill	create	pseudo	basic	hour	meter	contract
 
-style	message	keep
-dimension	more	surf
-logarithm	screen	prior
-estimate	letter	top
-trade	supply	curve
-command	gap	tank
-page	tool	pen
-search	loop	client
-graph	toast	plain
-combine	brand	raw
-language	trust	status
-light	clock	cable
-probability	frame	touch
-prompt	push	panel
-choice	grill	option
-count	utility	stack
-code	coil	trip
-file	gear	map
-design	link	clue
-column	gate	arc
-caret	commerce	end
-crop	mode	pipe
-line	twin	band
-since	wall	treat
-particle	hit	layer
-number	book	degree
-
-paste plus
+style	message	keep	paste	plus
+dimension	more	surf	compare	split
+logarithm	screen	prior	rough	minus
+estimate	letter	top	brush	drop
+trade	supply	curve		
+command	gap	tank		
+page	tool	pen		
+search	loop	client		
+graph	toast	plain		
+combine	brand	raw		
+language	trust	status		
+light	clock	cable		
+probability	frame	touch		
+prompt	push	panel		
+choice	grill	option		
+count	utility	stack		
+code	coil	trip		
+file	gear	map		
+design	link	clue		
+column	gate	arc		
+caret	commerce	end		
+crop	mode	pipe		
+line	twin	band		
+since	wall	treat		
+particle	hit	layer		
+number	book	degree		

@@ -191,7 +191,7 @@ x:3>
 x:4>
 
 [convert]		{1}				(2)				<3>				|4|				_5_				"6"				!7!				's'				
-[loop	]		reference		form			scalar			vector			behaviour		club			consent			'97'			
+[pull	]		reference		form			scalar			vector			behaviour		club			consent			'97'			
 [1]				style																											''				
 [2]				dimension																										''				
 [3]				logarithm																										''				

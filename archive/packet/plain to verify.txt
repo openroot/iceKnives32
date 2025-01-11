@@ -83,7 +83,7 @@ style	message	keep	paste	plus
 dimension	more	surf	compare	split
 logarithm	screen	prior	rough	minus
 estimate	letter	top	brush	drop
-trade	supply	curve		
+trade	supply	curve	load	stock
 command	gap	tank		
 page	tool	pen		
 search	loop	client		

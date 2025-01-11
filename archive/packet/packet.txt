@@ -196,7 +196,7 @@ x:4>
 [2]				dimension		more			surf			compare			split											''				
 [3]				logarithm		screen			prior			rough			minus											''				
 [4]				estimate		letter			top				brush			drop											''				
-[5]				trade			supply			curve																			''				
+[5]				trade			supply			curve			load			stock											''				
 [6]				command			gap				tank																			''				
 [7]				page			tool			pen																				''				
 [8]				search			loop			client																			''				

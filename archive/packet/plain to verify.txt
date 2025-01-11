@@ -96,3 +96,12 @@ prompt
 choice
 count
 code
+file
+design
+column
+caret
+crop
+line
+since
+particle
+number

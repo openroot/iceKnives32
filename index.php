@@ -41,9 +41,10 @@
 		echo '
 				<h2>1. set/packet</h2>
 				<p><a href="/?&a=set&b=packet&n=format&v=&r=28&c=3">0. packet.format</a></p>
-				<p><a href="/?&a=set&b=packet&n=range&v=one&r=28&c=7">1. range.one</a></p>
+				<p><a href="/?&a=set&b=packet&n=range&v=on&r=28&c=7">1. range.on</a></p>
 				<p><a href="/?&a=set&b=packet&n=migrate&v=node&r=28&c=7">2. migrate.node</a></p>
 				<p><a href="/?&a=set&b=packet&n=memory&v=blot&r=28&c=7">3. memory.blot</a></p>
+				<p><a href="/?&a=set&b=packet&n=convert&v=pull&r=28&c=1">4. convert.pull</a></p>
 
 				<h2>2. set/chain</h2>
 				<p><a href="/?&a=set&b=chain&n=f&v=x&r=28&c=6">1. f.x</a></p>

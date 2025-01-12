@@ -90,8 +90,8 @@ search	loop	client	routine	cross	box	plug
 graph	toast	plain	area	write	join	bullet
 combine	brand	raw	few	idea	deal	fold
 language	trust	status	rush	picture	city	error
-light	clock	cable	-	-	-	-
-probability	frame	touch	-	-	-	-
+light	clock	cable	the	ask	table	word
+probability	frame	touch	siren	tone	glue	jet
 prompt	push	panel	-	-	-	-
 choice	grill	option	-	-	-	-
 count	utility	stack	-	-	-	-

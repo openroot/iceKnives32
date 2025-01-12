@@ -202,7 +202,7 @@ x:4>
 [8]				search			loop			client			routine			cross			box				plug			''				
 [9]				graph			toast			plain			area			write			join			bullet			''				
 [10]			combine			brand			raw				few				idea			deal			fold			''				
-[11]			language		trust			status																			''				
+[11]			language		trust			status			rush			picture			city			error			''				
 [12]			light			clock			cable																			''				
 [13]			probability		frame			touch																			''				
 [14]			prompt			push			panel																			''				

@@ -89,7 +89,7 @@ page	tool	pen	fresh	pin	size	out
 search	loop	client	routine	cross	box	plug
 graph	toast	plain	area	write	join	bullet
 combine	brand	raw	few	idea	deal	fold
-language	trust	status	-	-	-	-
+language	trust	status	rush	picture	city	error
 light	clock	cable	-	-	-	-
 probability	frame	touch	-	-	-	-
 prompt	push	panel	-	-	-	-

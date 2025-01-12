@@ -88,7 +88,7 @@ command	gap	tank	pour	same	pay	symbol
 page	tool	pen	fresh	pin	size	out
 search	loop	client	routine	cross	box	plug
 graph	toast	plain	area	write	join	bullet
-combine	brand	raw	-	-	-	-
+combine	brand	raw	few	idea	deal	fold
 language	trust	status	-	-	-	-
 light	clock	cable	-	-	-	-
 probability	frame	touch	-	-	-	-

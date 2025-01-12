@@ -201,7 +201,7 @@ x:4>
 [7]				page			tool			pen				fresh			pin				size			out				''				
 [8]				search			loop			client			routine			cross			box				plug			''				
 [9]				graph			toast			plain			area			write			join			bullet			''				
-[10]			combine			brand			raw																				''				
+[10]			combine			brand			raw				few				idea			deal			fold			''				
 [11]			language		trust			status																			''				
 [12]			light			clock			cable																			''				
 [13]			probability		frame			touch																			''				

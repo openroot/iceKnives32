@@ -119,8 +119,8 @@ assistance	-	-	-	journal	entry	clip
 continue	-	-	-	stretch	round	say
 theory	-	-	-	propaganda	proof	chant
 facility	-	-	-	sanction	simple	tend
-simulate	-	-	-	-	asset	tour
-similar	-	-	-	-	basis	enter
+simulate	-	-	-	random	asset	tour
+similar	-	-	-	subsidiary	basis	enter
 bundle	-	-	-	-	program	bit
 remote	-	-	-	-	miniature	axis
 trigger	-	-	-	-	authority	cell

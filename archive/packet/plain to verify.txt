@@ -106,18 +106,18 @@ since	wall	treat	camp	bug	tariff	lodge
 particle	hit	layer	garden	proxy	account	factor
 number	book	degree	concept	age	guess	problem
 
-procedure	-	-	-	-	-	-
-tradition	-	-	-	-	-	-
-assembly	-	-	-	-	-	-
-title	-	-	-	-	-	-
-spontaneous	-	-	-	-	-	-
-condition	-	-	-	-	-	-
-intelligent	-	-	-	-	-	-
-instrument	-	-	-	-	-	-
-property	-	-	-	-	-	-
-assistance	-	-	-	-	-	-
-continue	-	-	-	-	-	-
-theory	-	-	-	-	-	-
+procedure	-	-	-	-	allocate	mere
+tradition	-	-	-	-	-	till
+assembly	-	-	-	-	-	live
+title	-	-	-	-	-	text
+spontaneous	-	-	-	-	-	heck
+condition	-	-	-	-	-	tell
+intelligent	-	-	-	-	-	even
+instrument	-	-	-	-	-	odd
+property	-	-	-	-	-	secret
+assistance	-	-	-	-	-	clip
+continue	-	-	-	-	-	say
+theory	-	-	-	-	-	chant
 facility	-	-	-	-	-	tend
 simulate	-	-	-	-	-	tour
 similar	-	-	-	-	-	enter
@@ -131,4 +131,4 @@ transport	-	-	-	-	-	media
 schedule	-	-	-	-	-	score
 ledger	-	-	-	-	-	index
 ready	-	-	-	-	-	site
-about	-	-	-	-	-	comma
+about	-	-	-	-	company	comma

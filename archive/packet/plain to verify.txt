@@ -124,9 +124,9 @@ similar	-	-	-	-	-	-
 bundle	-	-	-	-	-	-
 remote	-	-	-	-	-	-
 trigger	-	-	-	-	-	-
--	-	-	-	-	-	-
--	-	-	-	-	-	-
--	-	-	-	-	-	-
+diagram	-	-	-	-	-	-
+parallel	-	-	-	-	-	-
+candle	-	-	-	-	-	-
 -	-	-	-	-	-	-
 -	-	-	-	-	-	-
 -	-	-	-	-	-	-

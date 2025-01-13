@@ -250,7 +250,7 @@ x:5>
 [10]			assistance																										''				
 [11]			continue																										''				
 [12]			theory																											''				
-[13]			facility																										''				
+[13]			facility																						tend			''				
 [14]			simulate																						tour			''				
 [15]			similar																							enter			''				
 [16]			bundle																							bit				''				

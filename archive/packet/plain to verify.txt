@@ -118,7 +118,7 @@ property	-	-	-	-	-	-
 assistance	-	-	-	-	-	-
 continue	-	-	-	-	-	-
 theory	-	-	-	-	-	-
-facility	-	-	-	-	-	-
+facility	-	-	-	-	-	tend
 simulate	-	-	-	-	-	tour
 similar	-	-	-	-	-	enter
 bundle	-	-	-	-	-	bit

@@ -100,8 +100,8 @@ file	gear	map	core	nano	cord	arm
 design	link	clue	back	chip	team	actor
 column	gate	arc	all	play	pack	mass
 caret	course	end	tick	angle	pile	late
-crop	mode	pipe	-	-	-	-
-line	twin	band	-	-	-	-
-since	wall	treat	-	-	-	-
-particle	hit	layer	-	-	-	-
-number	book	degree	-	-	-	-
+crop	mode	pipe	tor	document	not	slab
+line	twin	band	pop	set	crew	bus
+since	wall	treat	camp	bug	tariff	lodge
+particle	hit	layer	garden	proxy	account	factor
+number	book	degree	concept	age	guess	problem

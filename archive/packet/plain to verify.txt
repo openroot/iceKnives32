@@ -106,10 +106,10 @@ since	wall	treat	camp	bug	tariff	lodge
 particle	hit	layer	garden	proxy	account	factor
 number	book	degree	concept	age	guess	problem
 
-procedure	-	-	-	-	allocate	mere
-tradition	-	-	-	-	value	till
-assembly	-	-	-	-	booklet	live
-title	-	-	-	-	subject	text
+procedure	-	-	-	queue	allocate	mere
+tradition	-	-	-	asymmetry	value	till
+assembly	-	-	-	season	booklet	live
+title	-	-	-	balance	subject	text
 spontaneous	-	-	-	-	factory	heck
 condition	-	-	-	-	absolute	tell
 intelligent	-	-	-	-	introduction	even

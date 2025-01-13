@@ -119,9 +119,9 @@ assistance	-	-	-	-	-	-
 continue	-	-	-	-	-	-
 theory	-	-	-	-	-	-
 facility	-	-	-	-	-	-
-simulate	-	-	-	-	-	-
-similar	-	-	-	-	-	-
-bundle	-	-	-	-	-	-
+simulate	-	-	-	-	-	tour
+similar	-	-	-	-	-	enter
+bundle	-	-	-	-	-	bit
 remote	-	-	-	-	-	axis
 trigger	-	-	-	-	-	cell
 diagram	-	-	-	-	-	draw

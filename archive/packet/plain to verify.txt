@@ -128,7 +128,7 @@ diagram	-	-	-	-	-	-
 parallel	-	-	-	-	-	-
 candle	-	-	-	-	-	-
 transport	-	-	-	-	-	-
--	-	-	-	-	-	-
--	-	-	-	-	-	-
--	-	-	-	-	-	-
--	-	-	-	-	-	-
+schedule	-	-	-	-	-	-
+ledger	-	-	-	-	-	-
+ready	-	-	-	-	-	-
+about	-	-	-	-	-	-

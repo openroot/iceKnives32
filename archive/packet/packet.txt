@@ -263,7 +263,7 @@ x:5>
 [23]			schedule																										''				
 [24]			ledger																											''				
 [25]			ready																											''				
-[26]			about																											''				
+[26]			about																							comma			''				
 [@]				associative		classic			primitive		example			signal			distribute		span			'203'			
 [s]				{}				()				<>				||				__				""				!!				''				
 [t]				{}				()				<>				||				__				""				!!				''				

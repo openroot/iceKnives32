@@ -106,16 +106,16 @@ since	wall	treat	camp	bug	tariff	lodge
 particle	hit	layer	garden	proxy	account	factor
 number	book	degree	concept	age	guess	problem
 
-procedure	-	-	-	queue	allocate	mere
-tradition	-	-	-	asymmetry	value	till
-assembly	-	-	-	season	booklet	live
-title	-	-	-	balance	subject	text
-spontaneous	-	-	-	belt	factory	heck
-condition	-	-	-	initial	absolute	tell
-intelligent	-	-	-	carriage	introduction	even
-instrument	-	-	-	spindle	storage	odd
-property	-	-	-	small	material	secret
-assistance	-	-	-	journal	entry	clip
+procedure	-	-	put	queue	allocate	mere
+tradition	-	-	app	asymmetry	value	till
+assembly	-	-	user	season	booklet	live
+title	-	-	role	balance	subject	text
+spontaneous	-	-	circle	belt	factory	heck
+condition	-	-	centre	initial	absolute	tell
+intelligent	-	-	later	carriage	introduction	even
+instrument	-	-	ever	spindle	storage	odd
+property	-	-	urgent	small	material	secret
+assistance	-	-	cookie	journal	entry	clip
 continue	-	-	decision	stretch	round	say
 theory	-	-	carpet	propaganda	proof	chant
 facility	-	-	snooze	sanction	simple	tend

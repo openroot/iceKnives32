@@ -106,15 +106,15 @@ since	wall	treat	camp	bug	tariff	lodge
 particle	hit	layer	garden	proxy	account	factor
 number	book	degree	concept	age	guess	problem
 
-procedure	-	-	put	queue	allocate	mere
-tradition	-	-	app	asymmetry	value	till
-assembly	-	-	user	season	booklet	live
-title	-	-	role	balance	subject	text
-spontaneous	-	-	circle	belt	factory	heck
-condition	-	-	centre	initial	absolute	tell
-intelligent	-	-	later	carriage	introduction	even
-instrument	-	-	ever	spindle	storage	odd
-property	-	-	urgent	small	material	secret
+procedure	component	double	put	queue	allocate	mere
+tradition	pencil	geometry	app	asymmetry	value	till
+assembly	context	linear	user	season	booklet	live
+title	attach	statement	role	balance	subject	text
+spontaneous	territory	revise	circle	belt	factory	heck
+condition	culture	indicate	centre	initial	absolute	tell
+intelligent	department	verbose	later	carriage	introduction	even
+instrument	window	coordinate	ever	spindle	storage	odd
+property	community	artificial	urgent	small	material	secret
 assistance	-	-	cookie	journal	entry	clip
 continue	-	-	decision	stretch	round	say
 theory	-	-	carpet	propaganda	proof	chant

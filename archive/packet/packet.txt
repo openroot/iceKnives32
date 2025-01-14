@@ -247,7 +247,7 @@ x:5>
 [7]				intelligent		department		verbose			later			carriage		introduction	even			''				
 [8]				instrument		window			coordinate		ever			spindle			storage			odd				''				
 [9]				property		community		artificial		urgent			small			material		secret			''				
-[10]			assistance										cookie			journal			entry			clip			''				
+[10]			assistance		vocabulary		speech			cookie			journal			entry			clip			''				
 [11]			continue										decision		stretch			round			say				''				
 [12]			theory											carpet			propaganda		proof			chant			''				
 [13]			facility										snooze			sanction		simple			tend			''				

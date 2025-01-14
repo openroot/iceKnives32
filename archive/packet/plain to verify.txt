@@ -115,7 +115,7 @@ condition	culture	indicate	centre	initial	absolute	tell
 intelligent	department	verbose	later	carriage	introduction	even
 instrument	window	coordinate	ever	spindle	storage	odd
 property	community	artificial	urgent	small	material	secret
-assistance	-	-	cookie	journal	entry	clip
+assistance	vocabulary	speech	cookie	journal	entry	clip
 continue	-	-	decision	stretch	round	say
 theory	-	-	carpet	propaganda	proof	chant
 facility	-	-	snooze	sanction	simple	tend

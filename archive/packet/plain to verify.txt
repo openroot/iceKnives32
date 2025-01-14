@@ -116,8 +116,8 @@ intelligent	-	-	-	carriage	introduction	even
 instrument	-	-	-	spindle	storage	odd
 property	-	-	-	small	material	secret
 assistance	-	-	-	journal	entry	clip
-continue	-	-	-	stretch	round	say
-theory	-	-	-	propaganda	proof	chant
+continue	-	-	decision	stretch	round	say
+theory	-	-	carpet	propaganda	proof	chant
 facility	-	-	snooze	sanction	simple	tend
 simulate	-	-	bell	random	asset	tour
 similar	-	-	sense	subsidiary	basis	enter

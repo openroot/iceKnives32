@@ -117,8 +117,8 @@ instrument	window	coordinate	ever	spindle	storage	odd
 property	community	artificial	urgent	small	material	secret
 assistance	vocabulary	speech	cookie	journal	entry	clip
 continue	chocolate	pair	decision	stretch	round	say
-theory	-	-	carpet	propaganda	proof	chant
-facility	-	-	snooze	sanction	simple	tend
+theory	costume	fork	carpet	propaganda	proof	chant
+facility	strategy	numeric	snooze	sanction	simple	tend
 simulate	-	-	bell	random	asset	tour
 similar	-	-	sense	subsidiary	basis	enter
 bundle	-	-	mobile	special	program	bit

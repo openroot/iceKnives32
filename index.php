@@ -55,7 +55,7 @@
 				<p><a href="/?&a=set&b=packet&n=balloon&v=suit&r=28&c=7">+x-6 [balloon.suit]</a></p>
 
 				<h2><i>z.2.</i> set/<u>chain</u></h2>
-				<p><a href="/?&a=set&b=chain&n=f&v=x&r=28&c=6">+x-1 [f.x]</a></p>
+				<p><a href="/?&a=set&b=chain&n=f&v=x&r=28&c=7">+x-1 [f.x]</a></p>
 				<p><a href="/?&a=set&b=chain&n=i&v=c&r=28&c=7">+x-2 [i.c]</a></p>
 				<p><a href="/?&a=set&b=chain&n=p&v=i&r=28&c=26">+x-3 [p.i]</a></p>
 

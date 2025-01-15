@@ -1,31 +1,35 @@
-Context	A	gravity	Cream	Fold	Head
-Raw	Quantum	leap	Cylinder	Fuel	Gas
-Filter	Trim	linear	Height	Home	Build
-Data	In	circle	Smoke	Tour	Dynamic
-Grid	Pressure	release	Arrow	Work	Structure
-Information	Tag	target	Project	Medical	Tip
-Paragraph	Asterisk	sector	Bit	Shade	Device
-Socket	Ratio	format	Letter	Cup	Count
-Tape	Trace	new	Grain	Packet	Energy
-Channel	Package	step	Date	File	Machine
-Standard	Dimension	axis	Time	Piece	Straight
-Diary	Object	move	Write	Mark	Touch
-Code	By	circuit	Read	Deliver	Term
-Message	Symbol	adapt	Year	Sample	Set
-Property	Multi	platform	Number	Value	Instrument
-Card	Identity	sequence	Order	Dial	Clock
-Frame	Area	curve	Media	Link	Star
-Hash	Pool	generate	Favourite	Cover	Belt
-Tier	Site	priority	Union	Switch	Panel
-Sort	Root	drive	Via	Transparent	Thread
-Space	Fine	gear	Enter	Rule	Pair
-Register	Account	dictionary	Jar	Custom	Boundary
-Spell	Element	tune	Integer	Play	Ready
-View	Room	pass	Quote	Routine	Index
-Span	Estimate	coil	Zoom	Condition	Plate
-Bracket	Temporary	block	Key	Unit	Check
-Grade	List	interest	X	Layer	Band
-Category	Library	board	Group	Class	Construct
+[f.x]
+
+Context	A	gravity	Cream	Fold	Head	Duplicate
+Raw	Quantum	leap	Cylinder	Fuel	Gas	-
+Filter	Trim	linear	Height	Home	Build	-
+Data	In	circle	Smoke	Tour	Dynamic	-
+Grid	Pressure	release	Arrow	Work	Structure	-
+Information	Tag	target	Project	Medical	Tip	-
+Paragraph	Asterisk	sector	Bit	Shade	Device	-
+Socket	Ratio	format	Letter	Cup	Count	-
+Tape	Trace	new	Grain	Packet	Energy	-
+Channel	Package	step	Date	File	Machine	-
+Standard	Dimension	axis	Time	Piece	Straight	-
+Diary	Object	move	Write	Mark	Touch	-
+Code	By	circuit	Read	Deliver	Term	-
+Message	Symbol	adapt	Year	Sample	Set	-
+Property	Multi	platform	Number	Value	Instrument	-
+Card	Identity	sequence	Order	Dial	Clock	-
+Frame	Area	curve	Media	Link	Star	-
+Hash	Pool	generate	Favourite	Cover	Belt	-
+Tier	Site	priority	Union	Switch	Panel	-
+Sort	Root	drive	Via	Transparent	Thread	-
+Space	Fine	gear	Enter	Rule	Pair	-
+Register	Account	dictionary	Jar	Custom	Boundary	-
+Spell	Element	tune	Integer	Play	Ready	-
+View	Room	pass	Quote	Routine	Index	-
+Span	Estimate	coil	Zoom	Condition	Plate	-
+Bracket	Temporary	block	Key	Unit	Check	-
+Grade	List	interest	X	Layer	Band	-
+Category	Library	board	Group	Class	Construct	Destruct
+
+[i.c]
 
 Laboratory	Chamber	Apartment	Colony	Out	Organization	Wash
 Satellite	Cycle	Prime	-	-	-	-
@@ -55,6 +59,8 @@ Disk	Soap	Comma	-	-	-	-
 Align	Spring	Art	-	-	-	-
 Currency	Strike	Diet	-	-	-	-
 Arc	Module	Contract	Issue	Consume	Program	English
+
+[p.i]
 
 Ship	Fill	Passive	Active	Party	Protocol	Freeze	Fire	Flow	Examine	Bid	Wake	Aspect	Corner	Search	Practice	Content	Volume	Ledger	Creation	Dictionary	Commit	Scroll	Loan	Feature	State
 Shark	Crane	Margosa	Betel	Sand	Equate	Grill	Bite	Read	Science	Bridge	Prize	Crop	Standard	Element	Source	Wheel	Environment	Tether	Communication	Long	Business	Coupon	Identity	Operate	Library

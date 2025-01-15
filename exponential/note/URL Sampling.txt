@@ -14,7 +14,7 @@
 +x-6 [balloon.suit]: http://localhost:32/?&a=set&b=packet&n=balloon&v=suit&r=28&c=7
 
 // z.2. set/chain
-+x-1 [f.x]: http://localhost:32/?&a=set&b=chain&n=f&v=x&r=28&c=6
++x-1 [f.x]: http://localhost:32/?&a=set&b=chain&n=f&v=x&r=28&c=7
 +x-2 [i.c]: http://localhost:32/?&a=set&b=chain&n=i&v=c&r=28&c=7
 +x-3 [p.i]: http://localhost:32/?&a=set&b=chain&n=p&v=i&r=28&c=26
 

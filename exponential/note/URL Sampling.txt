@@ -1,25 +1,28 @@
-// 0. set/initial
-http://localhost:32/
+// . set/initial
++x [Home]: http://localhost:32/
 
-// 1. set/packet
-http://localhost:32/?&a=set&b=packet&n=format&v=&r=28&c=3
-http://localhost:32/?&a=set&b=packet&n=range&v=on&r=28&c=7
-http://localhost:32/?&a=set&b=packet&n=migrate&v=node&r=28&c=7
-http://localhost:32/?&a=set&b=packet&n=memory&v=blot&r=28&c=7
-http://localhost:32/?&a=set&b=packet&n=convert&v=pull&r=28&c=7
-http://localhost:32/?&a=set&b=packet&n=interpret&v=method&r=28&c=7
+// z. set/iceKnives32
++x [Hello World!]: http://localhost:32/indexExample.php
 
-// 2. set/chain
-http://localhost:32/?&a=set&b=chain&n=f&v=x&r=28&c=6
-http://localhost:32/?&a=set&b=chain&n=i&v=c&r=28&c=7
-http://localhost:32/?&a=set&b=chain&n=p&v=i&r=28&c=26
+// z.1. set/packet
++x [packet.format]: http://localhost:32/?&a=set&b=packet&n=format&v=&r=28&c=3
++x-1 [range.on]: http://localhost:32/?&a=set&b=packet&n=range&v=on&r=28&c=7
++x-2 [migrate.node]: http://localhost:32/?&a=set&b=packet&n=migrate&v=node&r=28&c=7
++x-3 [memory.blot]: http://localhost:32/?&a=set&b=packet&n=memory&v=blot&r=28&c=7
++x-4 [convert.pull]: http://localhost:32/?&a=set&b=packet&n=convert&v=pull&r=28&c=7
++x-5 [interpret.method]: http://localhost:32/?&a=set&b=packet&n=interpret&v=method&r=28&c=7
++x-6 [balloon.suit]: http://localhost:32/?&a=set&b=packet&n=balloon&v=suit&r=28&c=7
 
-// 25. set/iceKnives32
-http://localhost:32/indexExample.php
+// z.2. set/chain
++x-1 [f.x]: http://localhost:32/?&a=set&b=chain&n=f&v=x&r=28&c=6
++x-2 [i.c]: http://localhost:32/?&a=set&b=chain&n=i&v=c&r=28&c=7
++x-3 [p.i]: http://localhost:32/?&a=set&b=chain&n=p&v=i&r=28&c=26
 
-// 26. set/blueprint
-http://localhost:32/?&a=set&b=blueprint&n=recycle&v=it&r=28&c=2
 
-// 0. set/note
-1. "localhost" represents the website domain.
-2. "32" represents port number used in server at "localhost" domain.
+// z.26. set/blueprint
++x-1 [recycle.it]: http://localhost:32/?&a=set&b=blueprint&n=recycle&v=it&r=28&c=2
+
+// . set/note
++x [Extra]: 
+1) "localhost" represents the website domain.
+2) "32" represents port number used in server at "localhost" domain.

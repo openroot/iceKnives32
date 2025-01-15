@@ -39,24 +39,28 @@
 <?php
 	if ($assert === "home") {
 		echo '
-				<h2>1. set/packet</h2>
-				<p><a href="/?&a=set&b=packet&n=format&v=&r=28&c=3">0. packet.format</a></p>
-				<p><a href="/?&a=set&b=packet&n=range&v=on&r=28&c=7">1. range.on</a></p>
-				<p><a href="/?&a=set&b=packet&n=migrate&v=node&r=28&c=7">2. migrate.node</a></p>
-				<p><a href="/?&a=set&b=packet&n=memory&v=blot&r=28&c=7">3. memory.blot</a></p>
-				<p><a href="/?&a=set&b=packet&n=convert&v=pull&r=28&c=7">4. convert.pull</a></p>
-				<p><a href="/?&a=set&b=packet&n=interpret&v=method&r=28&c=7">5. interpret.method</a></p>
+				<h2><i>.</i> set/<u>initial</u></h2>
+				<p><a href="/">+x [Home]</a></p>
 
-				<h2>2. set/chain</h2>
-				<p><a href="/?&a=set&b=chain&n=f&v=x&r=28&c=6">1. f.x</a></p>
-				<p><a href="/?&a=set&b=chain&n=i&v=c&r=28&c=7">2. i.c</a></p>
-				<p><a href="/?&a=set&b=chain&n=p&v=i&r=28&c=26">3. p.i</a></p>
+				<h2><i>z.</i> set/<u>iceKnives32</u></h2>
+				<p><a href="/indexExample.php">+x [Hello World!]</a></p>
 
-				<h2>25. set/iceKnives32</h2>
-				<p><a href="/indexExample.php">0. Hello World!</a></p>
+				<h2><i>z.1.</i> set/<u>packet</u></h2>
+				<p><a href="/?&a=set&b=packet&n=format&v=&r=28&c=3">+x [packet.format]</a></p>
+				<p><a href="/?&a=set&b=packet&n=range&v=on&r=28&c=7">+x-1 [range.on]</a></p>
+				<p><a href="/?&a=set&b=packet&n=migrate&v=node&r=28&c=7">+x-2 [migrate.node]</a></p>
+				<p><a href="/?&a=set&b=packet&n=memory&v=blot&r=28&c=7">+x-3 [memory.blot]</a></p>
+				<p><a href="/?&a=set&b=packet&n=convert&v=pull&r=28&c=7">+x-4 [convert.pull]</a></p>
+				<p><a href="/?&a=set&b=packet&n=interpret&v=method&r=28&c=7">+x-5 [interpret.method]</a></p>
+				<p><a href="/?&a=set&b=packet&n=balloon&v=suit&r=28&c=7">+x-6 [balloon.suit]</a></p>
 
-				<h2>26. set/blueprint</h2>
-				<p><a href="/?&a=set&b=blueprint&n=recycle&v=it&r=28&c=2">3. recycle.it</a></p>
+				<h2><i>z.2.</i> set/<u>chain</u></h2>
+				<p><a href="/?&a=set&b=chain&n=f&v=x&r=28&c=6">+x-1 [f.x]</a></p>
+				<p><a href="/?&a=set&b=chain&n=i&v=c&r=28&c=7">+x-2 [i.c]</a></p>
+				<p><a href="/?&a=set&b=chain&n=p&v=i&r=28&c=26">+x-3 [p.i]</a></p>
+
+				<h2><i>z.26.</i> set/<u>blueprint</u></h2>
+				<p><a href="/?&a=set&b=blueprint&n=recycle&v=it&r=28&c=2">+x-1 [recycle.it]</a></p>
 		';
 	}
 ?>

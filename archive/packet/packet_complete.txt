@@ -1,3 +1,5 @@
+[packet.format]
+
 pretend	update	studio
 associative	reference	{}
 classic	form	()
@@ -26,6 +28,8 @@ chat	room	??
 opera	team	##
 command	screen	,,
 toss	deploy	marquee
+
+[range.on]
 
 reference	form	scalar	vector	behaviour	club	consent
 get	source	card	work	borrow	tense	coin
@@ -56,6 +60,8 @@ current	read	buffer	pyramid	flex	battery	board
 mat	check	bracket	turn	wave	elite	project
 associative	classic	primitive	example	signal	distribute	span
 
+[migrate.node]
+
 reference	form	scalar	vector	behaviour	club	consent
 robotics	conversation	network	robot	process	between	deck
 comprise	optimisation	explain	compass	delta	sheet	pass
@@ -84,6 +90,8 @@ freezers	sustain	mark	alien	phase	clause	chart
 rotation	browser	micro	applicants	graphite	transform	rhombus
 rigidity	figure	green	sudoku	ticket	string	invoke
 associative	classic	primitive	example	signal	distribute	span
+
+[memory.blot]
 
 reference	form	scalar	vector	behaviour	club	consent
 show	permission	prototype	visit	agent	rent	analysis
@@ -114,6 +122,8 @@ toll	rest	amplitude	every	tree	extract	dummy
 bill	create	pseudo	basic	hour	meter	contract
 associative	classic	primitive	example	signal	distribute	span
 
+[convert.pull]
+
 reference	form	scalar	vector	behaviour	club	consent
 style	message	keep	paste	plus	skill	vast
 dimension	more	surf	compare	split	image	boundary
@@ -143,6 +153,8 @@ particle	hit	layer	garden	proxy	account	factor
 number	book	degree	concept	age	guess	problem
 associative	classic	primitive	example	signal	distribute	span
 
+[interpret.method]
+
 reference	form	scalar	vector	behaviour	club	consent
 procedure	component	double	put	queue	allocate	mere
 tradition	pencil	geometry	app	asymmetry	value	till
@@ -171,6 +183,8 @@ ledger	scrutiny	farm	semi	drag	examine	index
 ready	accumulate	parameter	orbit	spell	legal	site
 about	society	archive	spark	hyphen	company	comma
 associative	classic	primitive	example	signal	distribute	span
+
+[balloon.suit]
 
 reference	form	scalar	vector	behaviour	club	consent
 insert	-	-	-	-	-	-

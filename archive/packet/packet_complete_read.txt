@@ -93,34 +93,34 @@ associative		classic			primitive		example			signal			distribute		span
 
 [memory.blot]
 
-reference	form	scalar	vector	behaviour	club	consent
-show	permission	prototype	visit	agent	rent	analysis
-bag	circumstance	mosaic	depict	craft	net	permanent
-important	dynamic	relay	start	bin	spin	progress
-glass	fragment	approve	sketch	author	speed	platform
-other	abstract	general	real	fly	boost	appendix
-stuff	versatile	necessary	sample	most	demand	proportion
-high	simultaneous	phrase	study	main	tilt	voucher
-think	integration	certain	cue	static	bar	algorithm
-way	leisure	original	multiply	help	cake	preference
-aerial	hazard	caution	variable	comic	know	orientation
-menu	theme	dismiss	album	token	snap	personify
-well	compact	wizard	candy	display	vacuum	consist
-fit	arbitrary	discount	front	will	popular	together
-again	notary	mandate	piston	syllabus	dent	experience
-grab	chronology	favourite	rank	scatter	noise	episode
-flat	harmony	economy	case	energy	share	wrinkle
-run	limited	caption	paper	deep	year	enormous
-habitat	only	topic	crack	polymer	firm	though
-pact	request	nozzle	dash	pad	final	measure
-tie	flash	magnitude	calculate	poll	bot	release
-follow	blaze	magnet	atom	inspect	bench	momentum
-reply	shift	web	skip	second	scene	architecture
-prescribe	motor	fundamental	cut	minute	sequence	nomenclature
-subscribe	canvas	unit	per	rack	vent	numerous
-toll	rest	amplitude	every	tree	extract	dummy
-bill	create	pseudo	basic	hour	meter	contract
-associative	classic	primitive	example	signal	distribute	span
+reference		form			scalar			vector			behaviour		club			consent			
+show			permission		prototype		visit			agent			rent			analysis		
+bag				circumstance	mosaic			depict			craft			net				permanent		
+important		dynamic			relay			start			bin				spin			progress		
+glass			fragment		approve			sketch			author			speed			platform		
+other			abstract		general			real			fly				boost			appendix		
+stuff			versatile		necessary		sample			most			demand			proportion		
+high			simultaneous	phrase			study			main			tilt			voucher			
+think			integration		certain			cue				static			bar				algorithm		
+way				leisure			original		multiply		help			cake			preference		
+aerial			hazard			caution			variable		comic			know			orientation		
+menu			theme			dismiss			album			token			snap			personify		
+well			compact			wizard			candy			display			vacuum			consist			
+fit				arbitrary		discount		front			will			popular			together		
+again			notary			mandate			piston			syllabus		dent			experience		
+grab			chronology		favourite		rank			scatter			noise			episode			
+flat			harmony			economy			case			energy			share			wrinkle			
+run				limited			caption			paper			deep			year			enormous		
+habitat			only			topic			crack			polymer			firm			though			
+pact			request			nozzle			dash			pad				final			measure			
+tie				flash			magnitude		calculate		poll			bot				release			
+follow			blaze			magnet			atom			inspect			bench			momentum		
+reply			shift			web				skip			second			scene			architecture	
+prescribe		motor			fundamental		cut				minute			sequence		nomenclature	
+subscribe		canvas			unit			per				rack			vent			numerous		
+toll			rest			amplitude		every			tree			extract			dummy			
+bill			create			pseudo			basic			hour			meter			contract		
+associative		classic			primitive		example			signal			distribute		span			
 
 [convert.pull]
 
@@ -186,7 +186,7 @@ associative		classic			primitive		example			signal			distribute		span
 
 [balloon.suit]
 
-reference	form	scalar	vector	behaviour	club	consent
+reference		form			scalar			vector			behaviour		club			consent			
 -	-	-	-	-	-	-
 -	-	-	-	-	-	-
 -	-	-	-	-	-	-
@@ -213,4 +213,4 @@ reference	form	scalar	vector	behaviour	club	consent
 -	-	-	-	-	-	-
 -	-	-	-	-	-	-
 -	-	-	-	-	-	-
-associative	classic	primitive	example	signal	distribute	span
+associative		classic			primitive		example			signal			distribute		span			

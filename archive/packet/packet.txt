@@ -176,8 +176,8 @@ input	-	-	-	-	-	primary
 output	-	-	-	-	-	secondary
 rail	-	-	-	-	-	premier
 past	-	-	-	-	-	weekend
-package	-	-	-	-	-	-
-complete	-	-	-	-	-	-
+package	-	-	-	-	-	shortcut
+complete	-	-	-	-	-	auxiliary
 slash	-	-	-	-	-	-
 receive	-	-	-	-	-	-
 charge	-	-	-	-	-	-

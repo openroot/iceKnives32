@@ -297,7 +297,7 @@
 [17]			package			-				-				-				-				-				shortcut		''				
 [18]			complete		-				-				-				-				-				auxiliary		''				
 [19]			slash			-				-				-				-				-				industry		''				
-[20]			receive			-				-				-				-				-				-				''				
+[20]			receive			-				-				-				-				-				college			''				
 [21]			charge			-				-				-				-				-				-				''				
 [22]			identity		-				-				-				-				-				-				''				
 [23]			dialogue		-				-				-				-				-				-				''				

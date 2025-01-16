@@ -179,7 +179,7 @@ past	-	-	-	-	-	weekend
 package	-	-	-	-	-	shortcut
 complete	-	-	-	-	-	auxiliary
 slash	-	-	-	-	-	industry
-receive	-	-	-	-	-	-
+receive	-	-	-	-	-	college
 charge	-	-	-	-	-	-
 identity	-	-	-	-	-	-
 dialogue	-	-	-	-	-	-

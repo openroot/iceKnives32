@@ -180,7 +180,7 @@ package	-	-	-	-	-	shortcut
 complete	-	-	-	-	-	auxiliary
 slash	-	-	-	-	-	industry
 receive	-	-	-	-	-	college
-charge	-	-	-	-	-	-
+charge	-	-	-	-	-	forum
 identity	-	-	-	-	-	-
 dialogue	-	-	-	-	-	-
 compute	-	-	-	-	-	-

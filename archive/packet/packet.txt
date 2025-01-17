@@ -169,10 +169,10 @@ present	-	acute	accessory	tier	art	franchisee
 previous	-	force	action	dry	practice	consultancy
 remove	-	money	white	resume	query	merchandise
 erase	-	profit	complex	salary	one	compulsory
-clone	-	-	transparent	pure	float	election
-ship	-	-	vitamin	limit	voice	technology
-locate	-	-	segment	mask	trace	commission
-input	-	-	exercise	wide	valid	primary
+clone	-	promote	transparent	pure	float	election
+ship	-	pouch	vitamin	limit	voice	technology
+locate	-	poke	segment	mask	trace	commission
+input	-	press	exercise	wide	valid	primary
 output	-	-	aisle	cure	trap	secondary
 rail	-	-	different	trend	escape	premier
 past	-	-	generate	frequency	crawl	weekend

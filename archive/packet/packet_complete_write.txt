@@ -303,7 +303,7 @@
 [23]			dialogue		-				-				-				strict			radius			support			''				
 [24]			compute			-				-				-				price			imprint			environment		''				
 [25]			shop			-				-				-				pocket			stance			module			''				
-[26]			dump			-				-				-				socket			block			library			''				
+[26]			dump			-				-				masala			socket			block			library			''				
 [@]				associative		classic			primitive		example			signal			distribute		span			'203'			
 [s]				{}				()				<>				||				__				""				!!				''				
 [t]				{}				()				<>				||				__				""				!!				''				

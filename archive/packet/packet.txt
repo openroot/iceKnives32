@@ -160,15 +160,15 @@ ledger	scrutiny	farm	semi	drag	examine	index
 ready	accumulate	parameter	orbit	spell	legal	site
 about	society	archive	spark	hyphen	company	comma
 
-insert	-	-	percent	advice	bridge	recommend
-joint	-	-	call	plan	shell	institute
-retrieve	-	-	game	duty	shade	division
-apply	-	-	common	free	category	business
-next	-	-	stick	fill	device	agency
-present	-	-	accessory	tier	art	franchisee
-previous	-	-	action	dry	practice	consultancy
-remove	-	-	white	resume	query	merchandise
-erase	-	-	complex	salary	one	compulsory
+insert	-	attempt	percent	advice	bridge	recommend
+joint	-	swing	call	plan	shell	institute
+retrieve	-	clean	game	duty	shade	division
+apply	-	challenge	common	free	category	business
+next	-	chemistry	stick	fill	device	agency
+present	-	acute	accessory	tier	art	franchisee
+previous	-	force	action	dry	practice	consultancy
+remove	-	money	white	resume	query	merchandise
+erase	-	profit	complex	salary	one	compulsory
 clone	-	-	transparent	pure	float	election
 ship	-	-	vitamin	limit	voice	technology
 locate	-	-	segment	mask	trace	commission

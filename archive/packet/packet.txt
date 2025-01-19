@@ -192,7 +192,7 @@ dump	define	freeze	masala	socket	block	library
 -	-	-	-	-	-	domain
 -	-	-	-	-	-	invert
 -	-	-	-	-	-	patent
--	-	-	-	-	-	-
+-	-	-	-	-	-	fossil
 -	-	-	-	-	-	-
 -	-	-	-	-	-	-
 -	-	-	-	-	-	-

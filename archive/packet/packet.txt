@@ -205,11 +205,11 @@ dump	define	freeze	masala	socket	block	library
 -	-	-	matter	-	-	symptom
 -	-	-	blank	-	-	accident
 -	-	-	empty	-	-	everyone
--	-	-	-	-	-	-
--	-	-	-	-	-	-
--	-	-	-	-	-	-
--	-	-	-	-	-	-
--	-	-	-	-	-	-
+-	-	-	expensive	-	-	monologue
+-	-	-	credit	-	-	audit
+-	-	-	mandatory	-	-	packet
+-	-	-	concert	-	-	conference
+-	-	-	finite	-	-	gap
 -	-	-	greeting	-	-	swift
 -	-	-	premise	-	-	actual
 -	-	-	fashion	-	-	behind

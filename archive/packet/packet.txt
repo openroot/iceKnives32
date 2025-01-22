@@ -211,5 +211,5 @@ dump	define	freeze	masala	socket	block	library
 -	-	-	concert	-	-	conference
 -	-	-	finite	-	-	gap
 -	-	-	greeting	-	-	swift
--	-	-	premise	-	-	actual
+-	-	-	premise	-	future	actual
 across	configuration	usage	fashion	family	mutual	behind

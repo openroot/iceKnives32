@@ -209,7 +209,7 @@ dump	define	freeze	masala	socket	block	library
 -	-	-	credit	-	-	audit
 -	-	-	mandatory	-	-	packet
 -	-	-	concert	-	-	conference
--	-	-	finite	-	-	gap
+-	-	-	finite	-	-	capital
 -	-	-	greeting	-	-	swift
 -	-	-	premise	-	future	actual
 across	configuration	usage	fashion	family	mutual	behind

@@ -197,7 +197,7 @@ coral	overview	delimiter	academy	question	globe	modern
 -	-	-	copyright	backward	-	jug
 -	-	-	planets	rotate	-	hold
 -	-	-	attribute	solution	-	music
--		-	animation	rapid	-	formulae
+jump	margin	busy	animation	rapid	plural	formulae
 boil	harvest	sprinkle	kitchen	entrance	train	chamber
 blue	generation	confirm	logistic	adequate	consume	bounce
 junction	anonymous	glow	civil	silent	sit	regular

@@ -198,7 +198,7 @@ coral	overview	delimiter	academy	question	globe	modern
 -	-	-	planets	rotate	-	hold
 -	-	-	attribute	solution	-	music
 -		-	animation	rapid	-	formulae
--		-	kitchen	entrance	-	chamber
+boil	harvest	sprinkle	kitchen	entrance	train	chamber
 blue	generation	confirm	logistic	adequate	consume	bounce
 junction	anonymous	glow	civil	silent	sit	regular
 base	obstacle	adjoin	judge	gather	plate	least

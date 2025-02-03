@@ -191,7 +191,7 @@ coral	overview	delimiter	academy	question	globe	modern
 bouquet	experiment	flexible	repository	attachment	best	statistic
 -	-	-	finance	unify	-	domain
 -	-	-	sport	forward	-	invert
--	-	-	entertainment	unity	-	patent
+artist	sink	build	entertainment	unity	campus	patent
 -	-	-	medical	mission	-	fossil
 -	-	-	facial	young	-	bureau
 -	-	-	copyright	backward	-	jug

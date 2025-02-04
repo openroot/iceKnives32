@@ -214,3 +214,34 @@ compute			shelf			compile			loan			price			imprint			environment
 shop			cascade			blend			law				pocket			stance			module			
 dump			define			freeze			masala			socket			block			library			
 associative		classic			primitive		example			signal			distribute		span			
+
+[prototype.copy]
+
+reference		form			scalar			vector			behaviour		club			consent			
+coral			overview		delimiter		academy			question		globe			modern			
+bouquet			experiment		flexible		repository		attachment		best			statistic		
+critic			fabric			publish			finance			unify			produce			domain			
+catchy			meaning			secure			sport			forward			hot				invert			
+artist			sink			build			entertainment	unity			campus			patent			
+social			approximate		deduct			medical			mission			lease			fossil			
+diverse			proprietary		direct			facial			young			taste			bureau			
+magazine		exchange		poster			copyright		backward		suppose			jug				
+cliff			analytic		member			planets			rotate			indeed			hold			
+worth			operation		labour			attribute		solution		league			music			
+jump			margin			busy			animation		rapid			plural			formulae		
+boil			harvest			sprinkle		kitchen			entrance		train			chamber			
+blue			generation		confirm			logistic		adequate		consume			bounce			
+junction		anonymous		glow			civil			silent			sit				regular			
+base			obstacle		adjoin			judge			gather			plate			least			
+blanket			desire			pump			matter			annual			press			symptom			
+diamond			modesty			delicate		blank			calibrate		inorganic		accident		
+finale			endorsement		anyway			empty			relative		personnel		everyone		
+charter			marathon		fission			expensive		frost			hangout			monologue		
+union			commercial		circular		credit			short			vital			audit			
+former			irrespective	another			mandatory		polite			organic			packet			
+either			exclamation		ritual			concert			operate			addition		conference		
+travel			sponsorship		bound			finite			pilot			optimum			capital			
+visual			advertisement	glide			greeting		holder			ultimate		swift			
+buckle			anniversary		raise			premise			monitor			future			actual			
+across			configuration	usage			fashion			family			mutual			behind			
+associative		classic			primitive		example			signal			distribute		span			

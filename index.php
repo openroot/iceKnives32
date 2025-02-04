@@ -53,6 +53,7 @@
 				<p><a href="/?&a=set&b=packet&n=convert&v=pull&r=28&c=7">+x-4 [convert.pull]</a></p>
 				<p><a href="/?&a=set&b=packet&n=interpret&v=method&r=28&c=7">+x-5 [interpret.method]</a></p>
 				<p><a href="/?&a=set&b=packet&n=balloon&v=suit&r=28&c=7">+x-6 [balloon.suit]</a></p>
+				<p><a href="/?&a=set&b=packet&n=prototype&v=copy&r=28&c=7">+x-7 [prototype.copy]</a></p>
 
 				<h2><i>z.2.</i> set/<u>chain</u></h2>
 				<p><a href="/?&a=set&b=chain&n=f&v=x&r=28&c=7">+x-1 [f.x]</a></p>

@@ -12,6 +12,7 @@
 +x-4 [convert.pull]: http://localhost:32/?&a=set&b=packet&n=convert&v=pull&r=28&c=7
 +x-5 [interpret.method]: http://localhost:32/?&a=set&b=packet&n=interpret&v=method&r=28&c=7
 +x-6 [balloon.suit]: http://localhost:32/?&a=set&b=packet&n=balloon&v=suit&r=28&c=7
++x-7 [prototype.copy]: http://localhost:32/?&a=set&b=packet&n=prototype&v=copy&r=28&c=7
 
 // z.2. set/chain
 +x-1 [f.x]: http://localhost:32/?&a=set&b=chain&n=f&v=x&r=28&c=7

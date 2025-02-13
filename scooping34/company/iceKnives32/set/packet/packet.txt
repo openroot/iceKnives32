@@ -139,7 +139,7 @@ language		trust			status			rush			picture			city			error
 light			clock			cable			the				ask				table			word			
 probability		frame			touch			siren			tone			glue			jet				
 prompt			push			panel			fest			twist			home			tile			
-choice			grill			option			change			label			star			lap				
+choice			grill			option			change			label			pot			lap				
 count			utility			stack			mean			host			reach			month			
 code			coil			trip			edge			place			cast			date			
 file			gear			map				core			nano			cord			arm				

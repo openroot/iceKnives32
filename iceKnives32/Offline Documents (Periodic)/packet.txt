@@ -234,8 +234,8 @@ smoke	-	-	-	-	cylinders	sta.gr
 quartz	-	-	-	-	exchanges	ekt.uw
 crystal	-	-	-	-	mediums	cer.ql
 steam	-	-	-	-	averages	may.it
-rainbow	-	-	-	-	micros	diy.dt
-magma	-	-	-	-	levels	lib.bl
+rainbow	mono	fun	extra	drive	micros	diy.dt
+magma	texture	vivid	active	vibrant	levels	lib.bl
 water	decade	hint	trail	concentrate	tunnels	nop.co
 soil	moderate	thing	reel	grey	layers	for.hq
 fire	premium	section	cluster	parity	brackets	seh.mi

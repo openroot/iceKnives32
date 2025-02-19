@@ -221,8 +221,8 @@ asteroid	bunch	life	fast	alarm	terminals	sma.sh
 comet	radio	leaf	neutral	terminate	operations	fst.op
 meteor	service	organ	lay	finish	registers	cap.ex
 stone	flow	distil	friction	modulus	unions	con.ty
-lava	-	-	-	-	addresses	shr.mq
-ice	-	-	-	-	systems	dna.db
+lava	breadth	cycle	gesture	throttle	addresses	shr.mq
+ice	height	coat	dress	triangle	systems	dna.db
 vapour	-	-	-	-	clones	met.al
 air	-	-	-	-	engines	cor.ph
 gas	-	-	-	-	machines	est.fx
@@ -231,8 +231,8 @@ fibre	-	-	-	-	appendices	wyb.vr
 oxide	-	-	-	-	chambers	pre.nt
 acid	-	-	-	-	slides	pri.xr
 smoke	-	-	-	-	cylinders	sta.gr
-quartz	-	-	-	-	exchanges	ekt.uw
-crystal	-	-	-	-	mediums	cer.ql
+quartz	length	spray	head	oval	exchanges	ekt.uw
+crystal	width	berth	lens	threshold	mediums	cer.ql
 steam	dock	traverse	inverse	potential	averages	may.it
 rainbow	mono	fun	extra	drive	micros	diy.dt
 magma	texture	vivid	active	vibrant	levels	lib.bl

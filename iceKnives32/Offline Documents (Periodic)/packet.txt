@@ -233,7 +233,7 @@ acid	-	-	-	-	slides	pri.xr
 smoke	-	-	-	-	cylinders	sta.gr
 quartz	-	-	-	-	exchanges	ekt.uw
 crystal	-	-	-	-	mediums	cer.ql
-steam	-	-	-	-	averages	may.it
+steam	dock	traverse	inverse	potential	averages	may.it
 rainbow	mono	fun	extra	drive	micros	diy.dt
 magma	texture	vivid	active	vibrant	levels	lib.bl
 water	decade	hint	trail	concentrate	tunnels	nop.co
